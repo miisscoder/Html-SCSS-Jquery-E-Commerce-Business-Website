@@ -1,0 +1,489 @@
+﻿body.shangpinxiangqing {
+    background-color: #f6f6f6;
+    /*background: url(../bk/101_商品详情页-选择_（情况一）.jpg) no-repeat 0 0;
+    background-position: top;
+    background-size: 100% auto;*/
+    position: relative;
+    /*swiper-container*/
+    .swiper-container {
+        position: relative;
+        background: #ffffff;
+
+        .back {
+            position: absolute;
+            left: 4%;
+            top: 0.3rem;
+            width: 0.45rem;
+            height: auto;
+            z-index: 3;
+        }
+
+        .swiper-wrapper {
+            .swiper-slide {
+                height: 7.45rem;
+
+                img {
+                    width: 100%;
+                    height: 7.45rem;
+                }
+            }
+        }
+
+        .swiper-pagination {
+            font-size: 0.24rem;
+            height: 0.45rem;
+            line-height: 0.45rem;
+            width: 1rem;
+            right: 0;
+            left: unset;
+            bottom: 0.75rem;
+            -moz-border-radius-bottomleft: 0.5rem;
+            -moz-border-radius-topleft: 0.5rem;
+            border-bottom-left-radius: 0.5rem;
+            border-top-left-radius: 0.5rem;
+            background-color: #f9f9f9;
+        }
+    }
+    /*main*/
+    .main {
+
+        .product-title {
+            padding: 0.34rem 4%;
+            font-size: 0.34rem;
+            line-height: 1.45;
+            margin-bottom: 0.2rem;
+            width: 92%;
+            text-align: left;
+            background-color: #ffffff;
+        }
+
+        .list {
+            width: 100%;
+            margin-bottom: 0.2rem;
+            background-color: #ffffff;
+
+            .item {
+                width: 92%;
+                padding-left: 4%;
+                padding-right: 4%;
+                height: 1.05rem;
+
+                &.first-item {
+                    border-bottom: 1px solid #f4f4f4;
+                }
+
+                .title {
+                    width: 15%;
+                    font-size: 0.28rem;
+                    -webkit-text-fill-color: #898787;
+                    color: #898787;
+                }
+
+                .text {
+                    width: 70%;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    font-size: 0.28rem;
+                    padding-right: 5%;
+                }
+
+                .more {
+                    width: 10%;
+                    height: 100%;
+
+                    img {
+                        width: 0.3rem;
+                    }
+                }
+            }
+        }
+
+        .detail {
+            .title {
+                height: 1rem;
+                line-height: 1rem;
+                padding-left: 4%;
+                font-size: 0.34rem;
+                margin-bottom: 1px;
+                background-color: #ffffff;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .guess {
+            padding-bottom: 1.1rem;
+            margin-top: -0.3rem;
+
+            .title {
+                height: 2rem;
+                font-size: 0.34rem;
+                padding-top: 0.25rem;
+
+                img.green {
+                    height: 0.26rem;
+                    width: auto;
+                }
+
+                img.orange {
+                    height: 0.18rem;
+                    width: auto;
+                }
+
+                span {
+                    padding: 0 0.2rem;
+                }
+            }
+
+            .items {
+                width: 100%;
+
+                .item {
+                    width: 44.6%;
+                    margin: 0 1.2%;
+                    margin-bottom: 0.25rem;
+                    cursor: pointer;
+                    overflow: hidden;
+                    border-radius: 0.08rem;
+                    box-shadow: 0 0 3px rgba(0,0,0,0.3);
+                    background-color: #ffffff;
+
+                    img {
+                        width: 100%;
+                        height: 2.9rem;
+                    }
+
+                    .text-1 {
+                        font-size: 0.26rem;
+                        padding: 0.15rem 0.2rem 0;
+                        text-align: left;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box; //作为弹性伸缩盒子模型显示。
+                        -webkit-box-orient: vertical; //设置伸缩盒子的子元素排列方式--从上到下垂直排列
+                        -webkit-line-clamp: 2; //显示的
+                        width: calc(100% - 0.2rem * 2);
+                    }
+
+                    .text-2 {
+                        font-size: 0.28rem;
+                        -webkit-text-fill-color: #c6010c;
+                        color: #c6010c;
+                        width: calc(100% - 0.2rem * 2);
+                        padding: 0 0.2rem 0.15rem;
+
+                        img {
+                            height: 0.4rem;
+                            width: auto;
+                        }
+                    }
+                }
+            }
+        }
+
+        .bottom-bar {
+            height: 1rem;
+            box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+            background-color: #ffffff;
+            z-index: 10;
+            width: calc(100% - 0.2rem - 0.1rem);
+            padding-left: 0.2rem;
+            padding-right: 0.1rem;
+
+            .item {
+                height: 100%;
+                position: relative;
+                cursor: pointer;
+
+                img {
+                    height: 0.48rem;
+                    width: auto;
+                    margin-top: 0.05rem;
+                }
+
+                .text {
+                    font-size: 0.22rem;
+                    line-height: 0.3rem;
+                }
+
+                .circle {
+                    border: 1px solid #c6010c;
+                    -webkit-text-fill-color: #c6010c;
+                    color: #c6010c;
+                    width: 0.32rem;
+                    height: 0.32rem;
+                    border-radius: 50%;
+                    line-height: 0.32rem;
+                    text-align: center;
+                    font-size: 0.21rem;
+                    position: absolute;
+                    top: 7%;
+                    left: 60%;
+                    background-color: #ffffff;
+                }
+            }
+
+            .btns {
+                .btn-orange {
+                    height: 0.7rem;
+                    width: 2rem;
+                    border-bottom-left-radius: 1rem;
+                    border-top-left-radius: 1rem;
+                    border-top-right-radius: 0;
+                    border-bottom-right-radius: 0;
+                    line-height: 0.7rem;
+                    font-size: 0.32rem;
+                    margin-right: 0.07rem;
+                }
+
+                .btn-red {
+                    height: 0.7rem;
+                    width: 2rem;
+                    border-bottom-left-radius: 0;
+                    border-top-left-radius: 0;
+                    border-top-right-radius: 1rem;
+                    border-bottom-right-radius: 1rem;
+                    line-height: 0.7rem;
+                    font-size: 0.32rem;
+                }
+            }
+        }
+    }
+
+    .to-top {
+        cursor: pointer;
+        position: fixed;
+        right: 4%;
+        top: 70%;
+        width: 1rem;
+        height: 1rem;
+    }
+    /*modal : modal-options and */
+    .modal {
+        top: unset;
+        bottom: 0;
+        left: 0;
+        height: 9.9rem;
+        width: 100%;
+        overflow: hidden;
+        border-top-left-radius: 0.2rem;
+        border-top-right-radius: 0.2rem;
+        -moz-border-radius-topleft: 0.2rem;
+        -moz-border-radius-topright: 0.2rem;
+        transform: none;
+
+
+        .modal-content {
+            position: relative;
+            height: 9.9rem;
+
+            .warning {
+                position: absolute;
+                width: 70%;
+                height: 1.76rem;
+                top: 25%;
+                left: 15%;
+
+                .warning-content {
+                    width: 100%;
+                    height: 100%;
+                    font-size: 0.26rem;
+                    line-height: 1.5;
+                    text-align: center;
+                    -webkit-text-fill-color: #ffffff;
+                    color: #ffffff;
+                    background-color: #868686;
+                    border-radius: 0.1rem;
+                }
+            }
+
+            img.close {
+                width: 0.20rem;
+                height: auto;
+                position: absolute;
+                top: 0.3rem;
+                right: 4%;
+            }
+
+
+            .top-content {
+
+                .line-1 {
+                    margin-bottom: 0.6rem;
+                    margin-left: 4%;
+                    margin-right: 4%;
+                    margin-top: 0.3rem;
+
+                    img.left {
+                        width: 1.8rem;
+                        height: 1.8rem;
+                    }
+
+                    .text-1 {
+                        font-size: 0.26rem;
+                        -webkit-text-fill-color: #9d9d9d;
+                        color: #9d9d9d;
+                        width: 1rem;
+                        text-align: center;
+                    }
+
+                    .text-2 {
+                        font-size: 0.24rem;
+                        width: calc(100% - 1.8rem - 1rem);
+                        text-align: left;
+                    }
+                }
+
+                .title {
+                    font-size: 0.28rem;
+                    margin-bottom: 0.25rem;
+                    margin-left: 4%;
+                    margin-right: 4%;
+                }
+
+                .line-2, .line-3 {
+                    margin-bottom: 0.25rem;
+                    margin-left: 4%;
+                    margin-right: 4%;
+
+                    &.options {
+                        .option {
+                            margin-bottom: 0.25rem;
+                            margin-right: 0.2rem;
+                            height: 0.44rem;
+                            line-height: 0.44rem;
+                            border-radius: 0.22rem;
+                            font-size: 0.25rem;
+                            padding: 0 0.3rem;
+                            background-color: #e9e9e9;
+                            cursor: pointer;
+
+                            &.active {
+                                background-color: #c6010c;
+                                -webkit-text-fill-color: #ffffff;
+                                color: #ffffff;
+                            }
+                        }
+                    }
+                }
+
+                .line-4.options {
+                    width: 92%;
+                    margin-left: 4%;
+                    margin-right: 4%;
+
+                    .option.image-option {
+                        width: 22%;
+                        border: 1px solid #d4d4d4;
+                        border-radius: 0.1rem;
+                        overflow: hidden;
+                        cursor: pointer;
+
+                        img {
+                            width: auto;
+                            height: 1.55rem;
+                        }
+
+                        .text {
+                            font-size: 0.25rem;
+                            margin-bottom: 0.1rem;
+                        }
+
+                        &.active {
+                            border: 1px solid #c6010c;
+                        }
+                    }
+                }
+
+                .address-title {
+                    height: 1rem;
+                    text-align: center;
+                    font-size: 0.36rem;
+                    line-height: 1rem;
+                    padding-top: 0.05rem;
+                }
+
+                .address-items {
+
+                    .item {
+                        height: 1.1rem;
+                        border-top: 1px solid #eeeeee;
+                        padding-left: 4%;
+                        padding-right: 4%;
+
+                        &.first {
+                            border-top: none;
+                        }
+
+                        .radio-group {
+                            width: 0.3rem;
+                            height: 0.3rem;
+                            margin-right: 0.2rem;
+
+                            input[type=radio] + label {
+                                border: 1px solid #a09a9a;
+                            }
+
+                            input[type=radio]:checked + label {
+                                border: none;
+                            }
+                        }
+
+                        .text {
+                            font-size: 0.25rem;
+                            width: calc(100% - 0.55rem);
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            display: -webkit-box; //作为弹性伸缩盒子模型显示。
+                            -webkit-box-orient: vertical; //设置伸缩盒子的子元素排列方式--从上到下垂直排列
+                            -webkit-line-clamp: 3; //显示的行
+                        }
+                    }
+                }
+            }
+
+            .bottom-content {
+                height: 1rem;
+                border-top: 1px solid #efefef;
+
+                .btn-orange, .btn-red, .btn-grey {
+                    width: 40%;
+                    height: 0.64rem;
+                    line-height: 0.64rem;
+                    font-size: 0.3rem;
+                    margin: 0 0.2rem;
+                    border-radius: 0.32rem;
+
+                    &.long {
+                        width: 70%;
+                    }
+                }
+            }
+        }
+
+
+        &[data-type="able"] {
+            .able {
+                display: block;
+            }
+
+            .disable {
+                display: none;
+            }
+        }
+
+        &[data-type="disable"] {
+            .able {
+                display: none;
+            }
+
+            .disable {
+                display: block;
+            }
+        }
+    }
+}

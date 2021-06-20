@@ -1,0 +1,227 @@
+﻿body.yierjifenlei {
+    background-color: #f6f6f6;
+    /*header*/
+    .header {
+        position: relative;
+        background: #ffffff;
+        height: 1rem;
+
+
+        .close {
+            position: absolute;
+            left: 4%;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 0.2rem;
+            height: auto;
+        }
+
+        .logo {
+            width: 0.5rem;
+            height: 0.5rem;
+            margin-right: 0.2rem;
+        }
+
+        .text {
+            font-size: 0.36rem;
+            line-height: 0.36rem;
+            -webkit-text-fill-color: #010101;
+            color: #010101;
+            opacity: 0;
+        }
+    }
+    /*main*/
+    .main {
+        min-height: calc(100vh - 1rem);
+
+        .top-section {
+            border-top: 1px solid #efefef;
+            border-bottom: 1px solid #efefef;
+            height: calc(1.7rem - 2px);
+            width: 100%;
+            background-color: #ffffff;
+
+            .item {
+                margin: 0 0.55rem;
+
+                .title {
+                    font-size: 0.32rem;
+                    padding-top: 0.1rem;
+                }
+
+                .amount {
+                    -webkit-text-fill-color: #c6010c;
+                    color: #c6010c;
+                    font-size: 0.3rem;
+                    padding-top: 0.2rem;
+
+                    span {
+                        font-size: 0.22rem;
+                        -webkit-text-fill-color: #000000;
+                        color: #000000;
+                    }
+                }
+            }
+        }
+
+        .tab-template {
+            position: relative;
+            width: 100%;
+            height: calc(100vh - 1rem - 1.7rem);
+
+            .warning-bar {
+                position: absolute;
+                height: 0.6rem;
+                top: 0;
+                left: 0;
+                right: 0;
+                box-shadow: 0 3px 3px rgba(0,0,0,0.1);
+                z-index: 10;
+                padding-left: 3.6%;
+                padding-right: 3%;
+                background-color: #ffffff;
+
+                .title {
+                    -webkit-text-fill-color: #c6010c;
+                    color: #c6010c;
+                    font-size: 0.26rem;
+                    width: 1.1rem;
+                }
+
+                img {
+                    height: 0.2rem;
+                    width: auto;
+                    margin-right: 0.02rem;
+                }
+
+                .text {
+                    font-size: 0.23rem;
+                    overflow: hidden; //超出的文本隐藏
+                    text-overflow: ellipsis; //溢出用省略号显示
+                    white-space: nowrap; //溢出不换行
+                }
+            }
+
+            .tabs {
+                width: 2rem;
+                background: #f8f8f8;
+                padding-top: 1rem;
+
+                .tab {
+                    font-size: 0.28rem;
+                    height: 0.9rem;
+                    padding: 0 0.25rem 0 0.2rem;
+                    width: calc(2rem - 0.25rem - 0.2rem);
+                    position: relative;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+
+                    &.active {
+                        font-weight: bold;
+                        position: relative;
+                        background-color: #ffffff;
+                        -webkit-text-fill-color: inherit;
+                        color: inherit;
+
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            display: block;
+                            width: 0.1rem;
+                            height: 0.4rem;
+                            top: 50%;
+                            left: 0;
+                            transform: translateY(-50%);
+                            background-color: #c6010c;
+                        }
+                    }
+                }
+            }
+
+            .tab-containers {
+                width: calc(100% - 2rem);
+                height: inherit;
+                overflow: hidden;
+
+
+                .tab-container {
+                    width: 100%;
+                    height: inherit;
+                    overflow-y: auto;
+                    background-color: #ffffff;
+
+                    .items {
+                        width: 100%;
+                        padding-top: 1.05rem;
+                        padding-bottom: 1.2rem;
+
+                        .item {
+                            width: 30%;
+                            margin-top: 0.15rem;
+                            cursor: pointer;
+
+                            img {
+                                width: 1.2rem;
+                                height: 1.2rem;
+                            }
+
+                            .text {
+                                font-size: 0.26rem;
+                                padding: 0.15rem 0;
+                                text-align: center;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .bottom-bar {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 1rem;
+            box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+            background-color: #ffffff;
+            z-index: 10;
+
+            .item {
+                height: 100%;
+                position: relative;
+                cursor: pointer;
+
+                img {
+                    height: 0.48rem;
+                    width: auto;
+                    margin-top: 0.15rem;
+                }
+
+                .text {
+                    font-size: 0.22rem;
+                    line-height: 0.3rem;
+                }
+
+                .circle {
+                    border: 1px solid #c6010c;
+                    -webkit-text-fill-color: #c6010c;
+                    color: #c6010c;
+                    width: 0.35rem;
+                    height: 0.35rem;
+                    border-radius: 50%;
+                    line-height: 0.35rem;
+                    text-align: center;
+                    font-size: 0.21rem;
+                    position: absolute;
+                    top: 10%;
+                    left: 60%;
+                    background-color: #ffffff;
+                }
+            }
+        }
+    }
+}

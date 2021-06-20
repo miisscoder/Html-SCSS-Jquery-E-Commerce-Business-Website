@@ -1,0 +1,494 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/css.css" />
+    <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css" />
+</head>
+<body class="jinrishangxin">
+    <!--header-->
+    <div class="flex start middle header header-2">
+        <img src="image/back-black.png" class="close go-back" />
+        <div class="text flex start middle btn-modal btn-modal-history"
+             data-modal="modal-history">
+            <a href="javascript:;" class="btn">蛋糕&times;</a>
+            <a href="javascript:;" class="btn">蛋糕&times;</a>
+        </div>
+    </div>
+    <!--main-->
+    <div class="main">
+        <div class="bar flex space-between middle">
+            <a href="javascript:;" class="option active">综合</a>
+            <a href="javascript:;" class="option">销量</a>
+            <!--data-type : none up down-->
+            <a href="javascript:;" class="option btn-modal
+               btn-modal-jiage" data-type="none"
+               data-modal="modal-jiage">
+                价格
+                <div class="up"></div>
+                <div class="down"></div>
+            </a>
+            <!--data-type: open close-->
+            <a href="javascript:;" class="option btn-modal btn-modal-jifen
+               flex start middle" data-type="close"
+               onclick="$(this).attr('data-type', $(this).attr('data-type') === 'open' ? 'close': 'open')"
+               data-modal="modal-jifen">
+                积分范围
+                <img src="image/black-arrow.png" class="modal-close" />
+                <img src="image/red-arrow.png" class="modal-open" />
+            </a>
+            <!--data-type: open close-->
+            <a href="javascript:;" class="option btn-modal btn-modal-shaixuan
+               flex start middle" data-type="close"
+               onclick="$(this).attr('data-type', $(this).attr('data-type') === 'open' ? 'close': 'open')"
+               data-modal="modal-shaixuan">
+                筛选
+                <img src="image/filter.png" class="modal-close" />
+                <img src="image/filter-red.png" class="modal-open" />
+            </a>
+        </div>
+        <div class="items flex space-between top wrap">
+            <div class="item flex column start middle">
+                <img src="image/product-5.jpg" class="product" />
+                <div class="text">黑池蛋糕 芝士酸奶冰酪蛋糕</div>
+                <div class="flex space-between middle bottom-line">
+                    <div class="left">积分：1880</div>
+                    <img src="image/cart-red.png" class="right" />
+                </div>
+            </div>
+            <div class="item flex column start middle">
+                <img src="image/product-5.jpg" class="product" />
+                <div class="text">黑池蛋糕 芝士酸奶冰酪蛋糕</div>
+                <div class="flex space-between middle bottom-line">
+                    <div class="left">积分：1880</div>
+                    <img src="image/cart-red.png" class="right" />
+                </div>
+            </div>
+            <div class="item flex column start middle">
+                <img src="image/product-5.jpg" class="product" />
+                <div class="text">黑池蛋糕 芝士酸奶冰酪蛋糕</div>
+                <div class="flex space-between middle bottom-line">
+                    <div class="left">积分：1880</div>
+                    <img src="image/cart-red.png" class="right" />
+                </div>
+            </div>
+            <div class="item flex column start middle">
+                <img src="image/product-5.jpg" class="product" />
+                <div class="text">黑池蛋糕 芝士酸奶冰酪蛋糕</div>
+                <div class="flex space-between middle bottom-line">
+                    <div class="left">积分：1880</div>
+                    <img src="image/cart-red.png" class="right" />
+                </div>
+            </div>
+            <div class="item flex column start middle">
+                <img src="image/product-5.jpg" class="product" />
+                <div class="text">黑池蛋糕 芝士酸奶冰酪蛋糕</div>
+                <div class="flex space-between middle bottom-line">
+                    <div class="left">积分：1880</div>
+                    <img src="image/cart-red.png" class="right" />
+                </div>
+            </div>
+            <div class="item flex column start middle">
+                <img src="image/product-5.jpg" class="product" />
+                <div class="text">黑池蛋糕 芝士酸奶冰酪蛋糕</div>
+                <div class="flex space-between middle bottom-line">
+                    <div class="left">积分：1880</div>
+                    <img src="image/cart-red.png" class="right" />
+                </div>
+            </div>
+            <div class="item flex column start middle">
+                <img src="image/product-5.jpg" class="product" />
+                <div class="text">黑池蛋糕 芝士酸奶冰酪蛋糕</div>
+                <div class="flex space-between middle bottom-line">
+                    <div class="left">积分：1880</div>
+                    <img src="image/cart-red.png" class="right" />
+                </div>
+            </div>
+            <div class="item flex column start middle">
+                <img src="image/product-5.jpg" class="product" />
+                <div class="text">黑池蛋糕 芝士酸奶冰酪蛋糕</div>
+                <div class="flex space-between middle bottom-line">
+                    <div class="left">积分：1880</div>
+                    <img src="image/cart-red.png" class="right" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <img src="image/to-top.png" class="to-top"
+         onclick="$('.items').scrollTop(0);" />
+    <div class="bk-cover"
+         onclick="$('.btn-modal-shaixuan').attr('data-type', 'close');
+         $('.btn-modal-jifen').attr('data-type', 'close')"></div>
+    <!--modal-jiage-->
+    <div class="modal modal-jiage">
+        <div class="modal-content">
+            <div class="radio-group flex center middle radio-group-1">
+                <input type="radio" name="jiage"
+                       onclick="$('.btn-modal-jiage').attr('data-type', 'up')">
+                <div class="item flex middle space-between">
+                    <div class="left">价格从低到高</div>
+                    <img src="image/checked-2.png" />
+                </div>
+            </div>
+            <div class="radio-group flex center middle">
+                <input type="radio" name="jiage"
+                       onclick="$('.btn-modal-jiage').attr('data-type', 'down')">
+                <div class="item flex middle space-between">
+                    <div class="left">价格从低到高</div>
+                    <img src="image/checked-2.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--modal-jifen-->
+    <div class="modal modal-jifen">
+        <div class="modal-content flex space-between middle">
+            <input placeholder="最低积分" />
+            <span>-</span>
+            <input placeholder="最高积分" />
+            <a href="javascript:;" class="btn-red btn-ok"
+               onclick="$('.btn-modal-jifen').attr('data-type', 'close')">确定</a>
+        </div>
+    </div>
+    <!--modal-shaixuan-->
+    <div class="modal modal-shaixuan">
+        <div class="modal-content">
+            <div class="title">分类</div>
+            <div class="btns flex start top wrap">
+                <div class="radio-group">
+                    <input type="radio" checked name="fenlei" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="fenlei" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="fenlei" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="fenlei" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="fenlei" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="fenlei" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="fenlei" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="fenlei" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="fenlei" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="fenlei" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="fenlei" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="fenlei" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="fenlei" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="fenlei" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="fenlei" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="fenlei" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="fenlei" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="fenlei" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="fenlei" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+            </div>
+            <div class="title">品牌</div>
+            <div class="btns flex start top wrap">
+                <div class="radio-group">
+                    <input type="radio" checked name="pinpai" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="pinpai" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="pinpai" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="pinpai" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="pinpai" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="pinpai" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="pinpai" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="pinpai" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="pinpai" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="pinpai" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="pinpai" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="pinpai" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="pinpai" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="pinpai" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="pinpai" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="pinpai" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="pinpai" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="pinpai" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="pinpai" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="pinpai" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="pinpai" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="pinpai" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="pinpai" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="pinpai" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="pinpai" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="pinpai" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+            </div>
+            <div class="modal-footer flex end middle">
+                <a href="javascript:;" class="btn-cancel btn-black-line"
+                   onclick="$('.btn-modal-shaixuan').attr('data-type', 'close')">取消</a>
+                <a href="javascript:;" class="btn-ok btn-red"
+                   onclick="$('.btn-modal-shaixuan').attr('data-type', 'close')">确定</a>
+            </div>
+        </div>
+    </div>
+    <!--modal-history-->
+    <div class="modal modal-history">
+        <div class="modal-content">
+            <div class="title flex start middle">搜索历史 <img src="image/delete.png" class="delete"/></div>
+            <div class="btns flex start top wrap">
+                <div class="radio-group">
+                    <input type="radio" checked name="fenlei" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="fenlei" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="fenlei" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="fenlei" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+            </div>
+            <div class="title flex space-between middle">热门推荐
+                <div class="right flex end middle">
+                    <img src="image/change.png"/>
+                    换一批
+                </div>
+            </div>
+            <div class="btns flex start top wrap">
+                <div class="radio-group">
+                    <input type="radio" checked name="pinpai" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="pinpai" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="pinpai" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="pinpai" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="pinpai" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="pinpai" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="pinpai" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="pinpai" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="pinpai" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="pinpai" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="pinpai" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="pinpai" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="pinpai" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="pinpai" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="pinpai" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="pinpai" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="pinpai" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="pinpai" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="pinpai" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="pinpai" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="pinpai" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="pinpai" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="pinpai" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="pinpai" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="pinpai" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="pinpai" />
+                    <div class="text">品牌蛋糕</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/flexible.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+</body>
+</html>

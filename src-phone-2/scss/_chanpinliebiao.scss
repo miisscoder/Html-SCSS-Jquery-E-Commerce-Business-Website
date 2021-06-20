@@ -1,0 +1,128 @@
+﻿body.chanpinliebiao {
+    background-color: #f6f6f6;
+    /*header*/
+    .header {
+        position: relative;
+        background: #ffffff;
+        height: 1rem;
+
+
+        .close {
+            position: absolute;
+            left: 4%;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 0.2rem;
+            height: auto;
+        }
+
+        .logo {
+            width: 0.5rem;
+            height: 0.5rem;
+            margin-right: 0.2rem;
+        }
+
+        .text {
+            font-size: 0.36rem;
+            line-height: 0.36rem;
+            -webkit-text-fill-color: #010101;
+            color: #010101;
+            opacity: 0;
+        }
+    }
+    /*main*/
+    .main {
+        height: calc(100vh - 0.6rem - 0.2rem - 0.36rem - 0.05rem);
+        overflow-y: auto;
+        position: relative;
+
+        .items {
+            width: 100%;
+            padding-bottom: 1.2rem;
+            padding-top: 0.2rem;
+
+            .item {
+                width: 44.4%;
+                margin: 0 1.2%;
+                margin-top: 0.25rem;
+                cursor: pointer;
+                overflow: hidden;
+                border-radius: 0.08rem;
+                box-shadow: 0 0 3px rgba(0,0,0,0.3);
+
+                img {
+                    width: 100%;
+                    height: 2.9rem;
+                }
+
+                .text {
+                    font-size: 0.26rem;
+                    padding: 0.15rem 0.2rem;
+                    text-align: left;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box; //作为弹性伸缩盒子模型显示。
+                    -webkit-box-orient: vertical; //设置伸缩盒子的子元素排列方式--从上到下垂直排列
+                    -webkit-line-clamp: 2; //显示的
+                    height: calc(1.05rem - 0.15rem * 2);
+                    width: calc(100% - 0.2rem * 2);
+                    background-color: #ffffff;
+                }
+            }
+        }
+
+
+        .to-top {
+            cursor: pointer;
+            position: fixed;
+            right: 4%;
+            top: 70%;
+            width: 1rem;
+            height: 1rem;
+        }
+    }
+
+    .bottom-bar {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 1rem;
+        box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+        background-color: #ffffff;
+        z-index: 10;
+
+        .item {
+            height: 100%;
+            position: relative;
+            cursor: pointer;
+
+            img {
+                height: 0.48rem;
+                width: auto;
+                margin-top: 0.15rem;
+            }
+
+            .text {
+                font-size: 0.22rem;
+                line-height: 0.3rem;
+            }
+
+            .circle {
+                border: 1px solid #c6010c;
+                -webkit-text-fill-color: #c6010c;
+                color: #c6010c;
+                width: 0.35rem;
+                height: 0.35rem;
+                border-radius: 50%;
+                line-height: 0.35rem;
+                text-align: center;
+                font-size: 0.21rem;
+                position: absolute;
+                top: 10%;
+                left: 60%;
+                background-color: #ffffff;
+            }
+        }
+    }
+}

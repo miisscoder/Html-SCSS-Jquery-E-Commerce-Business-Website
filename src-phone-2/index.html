@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/css.css" />
+</head>
+<!--data-type: login-已登录 logout-未登录 outdate-过期-->
+<body class="index" data-type="logout">
+    <div class="flex center middle header">
+        <img src="image/close.png" class="close" />
+        <img src="image/logo.png" class="logo" />
+        <div class="text">福励惠</div>
+    </div>
+    <!--empty for no data-->
+    <div class="empty flex column center middle">
+        <img src="image/empty.png" />
+        <div class="text">很抱歉，本次兑换活动已结束 您的提货券已过期！</div>
+        <div class="text1">如有疑问请拨打客服电话：400-0917-686</div>
+    </div>
+    <!--main content-->
+    <div class="main not-empty">
+        <div class="bar flex space-between middle">
+            <a href="javascript:;" class="link">查看全部</a>
+            <div class="texts flex end middle">
+                <a href="register.html" class="link logout">注册</a>
+                <a href="chankanquanbu.html" class="link login">唐伯虎</a>
+                <span class="line">|</span>
+                <a href="login.html" class="link logout">登录</a>
+                <a href="index.html" class="link login">退出</a>
+            </div>
+        </div>
+        <img src="image/image.jpg" class="image" />
+        <div class="form flex column center middle">
+            <div class="input-group input-1">
+                <img src="image/coupon.png" />
+                <input placeholder="券号" />
+            </div>
+            <div class="input-group input-2">
+                <img src="image/lock.png" />
+                <input placeholder="密码" />
+            </div>
+            <a href="wodeduihuan.html" class="btn-red">进入兑换</a>
+            <div class="tip">
+                兑换此券即代表您同意我们的
+                <a href="register-contract.html" class="link-red">《用户注册协议》</a>和
+                <a href="privacy-policy.html" class="link-red">《隐私政策》</a>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/flexible.js"></script>
+</body>
+</html>

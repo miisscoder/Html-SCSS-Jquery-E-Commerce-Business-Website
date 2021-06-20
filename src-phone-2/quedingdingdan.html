@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/css.css" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-datepicker.css" />
+</head>
+<!--data-type: normal vegitable cake housekeeping-->
+<!--data-status: no-address has-address-->
+<body class="quedingdingdan" 
+	  data-type = 'cake'
+	  data-status = 'has-address'>
+	<!--header-->
+	<div class="flex center middle header">
+		<a href="wodeduihuan.html"><img src="image/back-black.png" class="close" /></a>
+		<div class="text">确定订单</div>
+	</div>
+	<!--main-->
+	<div class="main flex column space-between">
+		<div class="top-section">
+			<a href="javascript:;" class="address flex space-between stretch">
+				<div class="left flex center middle">
+					<img src="image/location.png" class="location" />
+				</div>
+				<div class="right flex space-between middle">
+					<div class="has-address">
+						<div class="line-1 flex start middle">
+							<div class="name">薰悟空</div>
+							<div class="tel">15602365699</div>
+						</div>
+						<div class="line-2">上海市静安区永和路118弄东方环球企业中心43号1101室</div>
+					</div>
+					<div class="no-address">
+						<div class="line-1 flex start middle">
+							请添加收货地址
+						</div>
+					</div>
+					<img src="image/more-dark-grey.png" class="more" />
+				</div>
+			</a>
+			<div class="items ">
+				<a href="javascript:;" class="item flex start middle">
+					<img src="image/product-1.jpg" class="left" />
+					<div class="right flex column start top">
+						<div class="title">
+							家政服务次卡-共4次
+						</div>
+						<div class="amount">
+							<span>共4次</span>
+						</div>
+					</div>
+				</a>
+				<a href="javascript:;" class="item flex start middle">
+					<img src="image/product-1.jpg" class="left" />
+					<div class="right flex column start top">
+						<div class="title">
+							蓝牙小音箱-赠品
+						</div>
+						<div class="amount">
+							<span>1个</span>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="list not-normal">
+				<a href="javascript:;" class="list-item first-item
+				   flex space-between middle btn-modal"
+				   data-modal="modal-picker">
+					<div class="title flex start middle">
+						<span class="housekeeping">服务</span>
+						<span class="cake">服务</span>
+						<span class="vegitable">配送</span>时间
+					</div>
+					<img src="image/more-dark-grey.png" />
+				</a>
+				<div class="list-item flex
+					space-between middle">
+					<div class="text-1 housekeeping">
+						*温馨提示：首次服务时间至早需要提前2天预约，临时改变上门
+						服务时间请与客服联系 400-0917-686。
+					</div>
+					<div class="text-1 vegitable">
+						*温馨提示：首次配送时间至早需要提前2天预约，默认配送时间
+						间隔一周，临时改变配送时间请与客服联系 400-0917-686。
+					</div>
+					<div class="text-1 cake">
+						*温馨提示：蛋糕配送时间10：00-19：30；截单时间20：00;
+						20：00前下单，最早次日10：00配送；20：00后下单，最早第
+						三日10：00配送；配送当天不可修改配送时间和配送地址；实际
+						配送可能会有30分钟左右误差，敬请谅解。
+					</div>
+				</div>
+			</div>
+			<div class="list not-normal">
+				<div class="list-item first-item
+					 flex space-between middle">
+					<div class="title flex start middle">
+						<span class="housekeeping">服务</span>
+						<span class="cake">配送</span>
+						<span class="vegitable">配送</span>时间
+					</div>
+					<div class="text-2 housekeeping text-time">2021年3月2号，10点开始</div>
+					<div class="text-2 cake text-time">2021年3月2号，10点开始</div>
+					<div class="text-2 vegitable text-time">2021年3月2号</div>
+				</div>
+				<div class="list-item flex space-between middle">
+					<div class="title">备注</div>
+					<input placeholder="选填，建议留言前先与客服沟通确认" />
+				</div>
+			</div>
+			<div class="list normal">
+				<div class="list-item flex space-between middle">
+					<div class="title">备注</div>
+					<input placeholder="选填，建议留言前先与客服沟通确认" />
+				</div>
+			</div>
+		</div>
+		<div class="bottom-bar flex center middle">
+			<a href="duihuanchenggong.html" class="btn-red">立即兑换</a>
+		</div>
+	</div>
+	<div class="bk-cover"></div>
+	<div class="modal modal-picker">
+		<div class="modal-content modal-content-1">
+			<a href="javascript:;" class="btn-cancel flex center middle">
+				<img src="image/+.png" />
+			</a>
+			<div class="modal-title">选择服务日期</div>
+			<div id="datepicker"></div>
+			<div class="modal-footer flex center middle no-vegitable">
+				<a href="javascript:;" class="btn-red btn-next">下一步</a>
+			</div>
+			<div class="modal-footer flex center middle vegitable">
+				<a href="javascript:;" class="btn-red btn-ok">确定</a>
+			</div>
+		</div>
+		<div class="modal-content modal-content-2">
+			<a href="javascript:;" class="flex start middle btn-last">
+				<img src="image/back-black.png" />返回
+			</a>
+			<div class="modal-title">选择开始时间</div>
+			<div class="housekeeping">
+				<div class="options flex space-between middle wrap ">
+					<a href="javascript:;" class="option active">09：00开始</a>
+					<a href="javascript:;" class="option ">10：00开始</a>
+					<a href="javascript:;" class="option ">13：00开始</a>
+					<a href="javascript:;" class="option ">14：00开始</a>
+					<a href="javascript:;" class="option ">15：00开始</a>
+					<a href="javascript:;" class="option ">16：00开始</a>
+				</div>
+			</div>
+			<div class="cake">
+				<div class="options flex space-between middle wrap ">
+					<a href="javascript:;" class="option active">10：00-12：00</a>
+					<a href="javascript:;" class="option ">12：00-14：00</a>
+					<a href="javascript:;" class="option ">14：00-16：00</a>
+					<a href="javascript:;" class="option ">16：00-18：00</a>
+					<a href="javascript:;" class="option ">18：00-20：00</a>
+				</div>
+			</div>
+			<div class="modal-footer flex center middle">
+				<a href="javascript:;" class="btn-red btn-ok">确定</a>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/flexible.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+	<script type="text/javascript" src="js/bootstrap-datepicker.zh-CN.min.js"></script>
+	<script type="text/javascript" src="js/quedingdingdan.js"></script>
+</body>
+</html>

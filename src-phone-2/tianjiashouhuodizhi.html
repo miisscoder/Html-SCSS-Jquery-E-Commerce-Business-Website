@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/css.css" />
+    <link rel="stylesheet" type="text/css" href="css/lc-city-selector.css" />
+</head>
+<!--data-type="edit" or "create" -->
+<body class="tianjiashouhuodizhi" data-type="create">
+    <!--header-->
+    <div class="flex center middle header">
+        <a href="shouhuodizhi.html"><img src="image/back-black.png" class="close" /></a>
+        <div class="text">添加收货地址</div>
+    </div>
+    <!--main content-->
+    <div class="main flex column space-between">
+        <div class="list">
+            <div class="list-item flex
+               space-between top">
+                <div class="text">收货人</div>
+                <input placeholder="请填写收货人地址" />
+            </div>
+            <div class="list-item flex
+               space-between top">
+                <div class="text">手机号码</div>
+                <input placeholder="请填写收货人地址" />
+            </div>
+            <div class="list-item flex
+               space-between top">
+                <div class="text">所在地址</div>
+                <a href="javascript:;" class="right flex space-between middle" id="base">
+                    <input placeholder="请选择" readonly id="default" />
+                    <img src="image/back-grey.png" />
+                </a>
+            </div>
+            <div class="list-item flex
+               space-between top textarea">
+                <div class="text">详细地址</div>
+                <textarea placeholder="街道、门牌号、小区、楼栋号、单元室等"></textarea>
+            </div>
+            <div class="list-item flex start middle">
+                <div class="checkbox-group">
+                    <input type="checkbox" /> <label></label>
+                </div>
+                <div class="radio-text">设为默认收货地址</div>
+            </div>
+        </div>
+        <a href="javascript:;" class="btn-red btn-modal"
+           data-modal="modal-warning">保存地址</a>
+    </div>
+    <div class="bk-cover"></div>
+    <!--modal-warning-->
+    <!--data-type : name tel area address -->
+    <div class="modal modal-warning" data-type="name">
+        <div class="modal-content">
+            <div class="title">提示</div>
+            <div class="text name">请填写收货人姓名</div>
+            <div class="text tel">请填写正确的手机号码</div>
+            <div class="text area">请选择地区</div>
+            <div class="text address">请填写详细地址</div>
+            <a href="javascript:;" class="btn-red btn-ok">确认</a>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/flexible.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/lc-city-selector.js"></script>
+    <script type="text/javascript" src="js/tianjiashouhuodizhi.js"></script>
+</body>
+</html>

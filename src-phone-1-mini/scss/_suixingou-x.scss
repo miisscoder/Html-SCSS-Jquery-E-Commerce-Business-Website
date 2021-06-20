@@ -1,0 +1,239 @@
+﻿body.suixingou {
+    background-color: #f6f6f6;
+    padding: 0;
+    /*header*/
+    .header {
+        position: relative;
+        background: #ffffff;
+        height: 1rem;
+        padding-left: 4%;
+
+        .search-group {
+            width: 64%;
+            height: 0.6rem;
+            border-radius: 0.3rem;
+            overflow: hidden;
+            background: #f6f6f6;
+
+            img.icon {
+                width: 0.28rem;
+                height: auto;
+                margin-left: 0.35rem;
+            }
+
+            span {
+                font-size: 0.28rem;
+                margin: 0 0.33rem 0 0.31rem;
+                -webkit-text-fill-color: #d9d7d7;
+                color: #d9d7d7;
+            }
+
+            input {
+                height: 0.6rem;
+                line-height: 0.6rem;
+                font-size: 0.28rem;
+                width: calc(100% - 0.28rem - 0.4rem - 0.32rem - 0.35rem);
+                border: none;
+                padding: 0;
+                background-color: transparent;
+
+
+                &::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+                    -webkit-text-fill-color: #cfcdcd;
+                    color: #cfcdcd;
+                }
+
+                &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+                    -webkit-text-fill-color: #cfcdcd;
+                    color: #cfcdcd;
+                }
+
+                &::-moz-placeholder { /* Mozilla Firefox 19+ */
+                    -webkit-text-fill-color: #cfcdcd;
+                    color: #cfcdcd;
+                }
+
+                &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+                    -webkit-text-fill-color: #cfcdcd;
+                    color: #cfcdcd;
+                }
+            }
+        }
+    }
+    /*main*/
+    .main {
+
+        .tab-template {
+            position: relative;
+            width: 100%;
+
+
+            .tabs {
+                width: 2rem;
+                background: #f8f8f8;
+                height: calc(100vh - 2.5rem);
+                overflow-y: auto;
+                padding-bottom: 0.5rem;
+
+                .tab {
+                    font-size: 0.28rem;
+                    height: 0.9rem;
+                    padding: 0 0.3rem 0 0.15rem;
+                    width: calc(2rem - 0.25rem - 0.2rem);
+                    position: relative;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+
+                    &.active {
+                        font-weight: bold;
+                        position: relative;
+                        background-color: #ffffff;
+                        -webkit-text-fill-color: inherit;
+                        color: inherit;
+
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            display: block;
+                            width: 0.1rem;
+                            height: 0.4rem;
+                            top: 50%;
+                            left: 0;
+                            transform: translateY(-50%);
+                            background-color: #c6010c;
+                        }
+                    }
+                }
+            }
+
+            .tab-containers {
+                width: calc(100% - 2rem);
+                height: calc(100vh - 2rem);
+                overflow-y: auto;
+                background-color: #ffffff;
+
+                .banner {
+                    width: calc(100% - 0.55rem);
+                    margin-left: 0.3rem;
+                    height: auto;
+                    margin-top: 0.3rem;
+                }
+
+
+                .tab-container-content {
+                    width: 100%;
+                    height: auto;
+                    overflow-y: auto;
+                    background-color: #ffffff;
+                    padding-bottom: 0.5rem;
+
+                    .title {
+                        font-size: 0.3rem;
+                        font-weight: bold;
+                        line-height: 2;
+                        padding-left: 0.3rem
+                    }
+
+                    .items {
+                        width: 100%;
+
+                        .item {
+                            width: 30%;
+                            margin-top: 0.15rem;
+                            cursor: pointer;
+
+                            img {
+                                width: 1.2rem;
+                                height: 1.2rem;
+                            }
+
+                            .text {
+                                font-size: 0.26rem;
+                                padding: 0.15rem 0;
+                                text-align: center;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .bottom-bar {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 1rem;
+            box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+            background-color: #ffffff;
+            z-index: 10;
+
+            .item {
+                height: 100%;
+                position: relative;
+                cursor: pointer;
+
+                img {
+                    height: 0.48rem;
+                    width: auto;
+                    margin-top: 0.15rem;
+                }
+
+                .text {
+                    font-size: 0.22rem;
+                    line-height: 0.3rem;
+                }
+
+                .circle {
+                    border: 1px solid #c6010c;
+                    -webkit-text-fill-color: #c6010c;
+                    color: #c6010c;
+                    width: 0.35rem;
+                    height: 0.35rem;
+                    border-radius: 50%;
+                    line-height: 0.35rem;
+                    text-align: center;
+                    font-size: 0.21rem;
+                    position: absolute;
+                    top: 10%;
+                    left: 60%;
+                    background-color: #ffffff;
+                }
+            }
+        }
+    }
+    /*bottom-icons*/
+    .bottom-icons {
+        width: 92%;
+        position: fixed;
+        bottom: 0;
+        height: 1rem;
+        padding: 0 4%;
+        background-color: #ffffff;
+
+        .item {
+            height: 100%;
+
+            img {
+                height: 50%;
+                margin-top: 0.1rem;
+            }
+
+            .text {
+                font-size: 0.3rem;
+                transform: scale(0.7);
+                -webkit-text-fill-color: #000000;
+                color: #000000;
+
+                &.active {
+                    -webkit-text-fill-color: #ce0814;
+                    color: #ce0814;
+                }
+            }
+        }
+    }
+}

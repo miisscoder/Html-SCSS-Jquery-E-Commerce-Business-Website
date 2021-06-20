@@ -1,0 +1,381 @@
+﻿body.quxiaoshenqing {
+    background-color: #f6f6f6;
+    /*header*/
+    .header {
+        position: relative;
+        background: #ffffff;
+        height: 1rem;
+
+
+        .close {
+            position: absolute;
+            left: 4%;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 0.2rem;
+            height: auto;
+        }
+
+        .logo {
+            width: 0.5rem;
+            height: 0.5rem;
+            margin-right: 0.2rem;
+        }
+
+        .text {
+            font-size: 0.36rem;
+            line-height: 0.36rem;
+            -webkit-text-fill-color: #010101;
+            color: #010101;
+        }
+    }
+    /*red-pannel*/
+    .red-pannel {
+        height: 1.85rem;
+        background-color: #c6010c;
+        color: #ffffff;
+        -webkit-text-fill-color: #ffffff;
+        padding: 0.4rem 6%;
+
+        .line-1 {
+            font-size: 0.32rem;
+        }
+
+
+        .line-3 {
+            margin-top: 0.2rem;
+            font-size: 0.26rem;
+        }
+    }
+    /*main*/
+    .main {
+        margin-top: 0.2rem;
+        padding-bottom: 0.5rem;
+
+        .item {
+            background-color: #ffffff;
+            margin-left: 4%;
+            margin-right: 4%;
+            height: 1.95rem;
+            border-radius: 0.1rem;
+            box-shadow: 0 0 3px rgba(0,0,0,0.1);
+            padding-left: 0.14rem;
+            padding-right: 0.14rem;
+
+
+            img.left {
+                width: 1.26rem;
+                height: 1.2rem;
+                border-radius: 0.05rem;
+            }
+
+            .right {
+                padding-left: 0.13rem;
+                width: calc(100% - 1.53rem);
+
+                .title {
+                    font-size: 0.22rem;
+                    margin-bottom: 0.12rem;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box; //作为弹性伸缩盒子模型显示。
+                    -webkit-box-orient: vertical; //设置伸缩盒子的子元素排列方式--从上到下垂直排列
+                    -webkit-line-clamp: 2; //显示的行
+                    height: 0.5rem;
+                }
+
+                .amount {
+                    font-size: 0.2rem;
+                    margin-bottom: 0.14rem;
+
+                    span {
+                        padding-right: 0.2rem;
+                    }
+                }
+
+                .line-2 {
+                    font-size: 0.24rem;
+                    color: #c6010c;
+                    -webkit-text-fill-color: #c6010c;
+                }
+            }
+        }
+
+        .section {
+            background-color: #ffffff;
+            margin-left: 4%;
+            margin-right: 4%;
+            margin-top: 0.2rem;
+            overflow: hidden;
+
+            .line {
+                height: 0.9rem;
+                border-bottom: 1px solid #f6f6f6;
+                padding-left: 0.14rem;
+                padding-right: 0.14rem;
+
+                .text-bannel {
+                    width: 1.6rem;
+                    height: 0.5rem;
+                    border-radius: 0.25rem;
+                    font-size: 0.24rem;
+                    text-align: center;
+                    line-height: 0.5rem;
+                    border: 1px solid #b9b9b9;
+                    margin-right: 0.25rem;
+                }
+
+                .text-bannel-2 {
+                    width: 13%;
+                    margin-right: 5%;
+                    height: 0.4rem;
+                    font-size: 0.24rem;
+                    text-align: center;
+                    line-height: 0.4rem;
+                    border-radius: unset;
+                    background-color: #e7e7e7;
+                }
+
+                .title {
+                    padding-right: 0.5rem;
+                    font-size: 0.26rem;
+                }
+
+                .right {
+                    font-size: 0.24rem;
+
+                    img.more {
+                        width: 0.25rem;
+                        height: auto;
+                        margin-left: 0.1rem;
+                        margin-right: 0.1rem;
+                    }
+                }
+
+                .text {
+                    font-size: 0.26rem;
+                    margin-right: 0.1rem;
+                }
+            }
+
+
+            &.section-reason {
+                .line-reason {
+                    border: none;
+                }
+
+                textarea {
+                    margin: 0 0.3rem 0.3rem;
+                    padding: 0.25rem 0.2rem;
+                    width: calc(100% - 1rem);
+                    height: 1.4rem;
+                    font-size: 0.22rem;
+                    background-color: #f6f6f6;
+                    display: block;
+                    border: none;
+                    border-radius: 0.15rem;
+
+                    &::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+                        -webkit-text-fill-color: #979696;
+                        color: #979696;
+                    }
+
+                    &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+                        -webkit-text-fill-color: #979696;
+                        color: #979696;
+                    }
+
+                    &::-moz-placeholder { /* Mozilla Firefox 19+ */
+                        -webkit-text-fill-color: #979696;
+                        color: #979696;
+                    }
+
+                    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+                        -webkit-text-fill-color: #979696;
+                        color: #979696;
+                    }
+                }
+            }
+
+            &.section-upload {
+                .line {
+                    height: 1rem;
+                }
+
+                textarea {
+                    padding: 0.3rem 0.2rem;
+                    width: calc(100% - 0.4rem);
+                    height: 0.8rem;
+                    font-size: 0.22rem;
+                    background-color: #ffffff;
+                    display: block;
+                    border: none;
+
+                    &::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+                        -webkit-text-fill-color: #979696;
+                        color: #979696;
+                    }
+
+                    &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+                        -webkit-text-fill-color: #979696;
+                        color: #979696;
+                    }
+
+                    &::-moz-placeholder { /* Mozilla Firefox 19+ */
+                        -webkit-text-fill-color: #979696;
+                        color: #979696;
+                    }
+
+                    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+                        -webkit-text-fill-color: #979696;
+                        color: #979696;
+                    }
+                }
+
+                .images {
+                    padding: 0 4%;
+                    background-color: #ffffff;
+                    font-size: 0;
+                    margin-top: 0.3rem;
+                    margin-bottom: 0.3rem;
+
+
+                    .item-image {
+                        height: 1.1rem;
+                        width: 1.1rem;
+                        position: relative;
+                        margin-right: 0.15rem;
+                        margin-bottom: 0.3rem;
+
+
+                        img.image {
+                            height: 1.1rem;
+                            width: 1.1rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .address {
+            padding: 0.06rem 0 0;
+            margin: 0.2rem 4%;
+            background-color: #ffffff;
+            border-radius: 0.1rem;
+
+            .line {
+                margin-top: 0.2rem;
+
+                .left {
+                    width: 0.7rem;
+
+                    img.location {
+                        width: auto;
+                        height: 0.4rem;
+                        margin-top: 20%;
+                    }
+                }
+
+                .right {
+                    width: calc(100% - 0.7rem);
+                    font-size: 0.22rem;
+                    padding-right: 0.2rem;
+
+                    .line-1 {
+                        margin-top: 0.2rem;
+
+                        span {
+                            margin-right: 0.9rem;
+                        }
+                    }
+
+                    .line-2 {
+                        margin-top: 0.2rem;
+                    }
+                }
+            }
+
+            .btns {
+                padding: 0.08rem 0 0.16rem;
+                border-top: 1px solid #f6f6f6;
+                margin-top: 0.35rem;
+
+                .btn {
+                    width: 50%;
+                    font-size: 0.3rem;
+                    height: 0.9rem;
+
+                    &.btn-left {
+                        border-right: 1px solid #f6f6f6;
+                    }
+
+                    img {
+                        height: 0.5rem;
+                        width: auto;
+                        margin-right: 0.25rem;
+                    }
+                }
+            }
+        }
+
+
+        &[data-type="tuikuan"] {
+            .tuikuan {
+                display: flex;
+            }
+
+            .huanhuo {
+                display: none;
+            }
+        }
+
+        &[data-type="huanhuo"] {
+            .huanhuo {
+                display: flex;
+            }
+
+            .tuikuan {
+                display: none;
+            }
+        }
+    }
+    /*modal-cancel*/
+    .modal-cancel {
+        border-radius: 0.15rem;
+        padding-top: 0.8rem;
+
+        .text {
+            text-align: center;
+            font-size: 0.26rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .modal-footer {
+            height: 0.9rem;
+            border-top: 1px solid #eeeeee;
+
+            .btn-cancel {
+                width: calc(50% - 1px);
+                height: 0.9rem;
+                display: block;
+                line-height: 0.9rem;
+                text-align: center;
+                font-size: 0.28rem;
+                -webkit-text-fill-color: #9f9f9f;
+                color: #9f9f9f;
+                border-right: 1px solid #eeeeee;
+            }
+
+            .btn-ok {
+                width: 50%;
+                height: 0.9rem;
+                display: block;
+                line-height: 0.9rem;
+                text-align: center;
+                font-size: 0.28rem;
+                -webkit-text-fill-color: #c6010c;
+                color: #c6010c;
+            }
+        }
+    }
+}

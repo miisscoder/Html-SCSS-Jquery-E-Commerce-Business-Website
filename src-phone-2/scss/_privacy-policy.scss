@@ -1,0 +1,32 @@
+﻿body.privacy-policy {
+    
+    /*header*/
+    .header {
+        position: relative;
+        background: #ffffff;
+        height:1rem;
+
+
+        .back {
+            position: absolute;
+            left: 4%;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 0.2rem;
+            height: auto;
+        }
+
+        .text {
+            font-size: 0.36rem;
+            line-height: 0.36rem;
+            padding-bottom: 0.05rem;
+            -webkit-text-fill-color: #010101;
+            color: #010101;
+        }
+    }
+    /*content image*/
+    .content {
+        width: 100%;
+        height: auto;
+    }
+}

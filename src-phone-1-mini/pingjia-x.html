@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/css.css" />
+</head>
+<body class="pingjia">
+    <!--header-->
+    <div class="flex center middle header">
+        <img src="image/back-black.png" class="close go-back" />
+        <div class="text">评价</div>
+    </div>
+    <!--main-->
+    <div class="main">
+        <!--item-->
+        <div class="item flex start middle">
+            <img src="image/product.jpg" class="left" />
+            <div class="right flex column center top">
+                <div class="title">
+                    欧扎克（OCAK）臻享版每日坚果礼盒
+                    20g/袋 30袋装
+                </div>
+                <div class="amount">
+                    <span>20g*30袋</span>
+                    <span>数量：1</span>
+                </div>
+                <div class="line-2">
+                    积分：2360
+                </div>
+            </div>
+        </div>
+        <!--textarea-->
+        <textarea placeholder="期待您的五星好评哦~"></textarea>
+        <!--btns-->
+        <div class="flex start middle btns wrap">
+            <a href="javascript:;"
+               class="btn-upload flex column center middle">
+                +
+                <span>上传图片</span>
+                <input type="file" accept="image/png,image/jpeg" />
+            </a>
+            <a href="javascript:;" class="item-image">
+                <img class="image" src="image/default.jpg" />
+                <img class="delete" src="image/delete-circle.png" />
+            </a>
+            <a href="javascript:;" class="item-image">
+                <img class="image" src="image/default.jpg" />
+                <img class="delete" src="image/delete-circle.png" />
+            </a>
+            <a href="javascript:;" class="item-image">
+                <img class="image" src="image/default.jpg" />
+                <img class="delete" src="image/delete-circle.png" />
+            </a>
+            <a href="javascript:;" class="item-image">
+                <img class="image" src="image/default.jpg" />
+                <img class="delete" src="image/delete-circle.png" />
+            </a>
+        </div>
+        <div class="radios flex start middle">
+            <div class="flex start middle radio-item">
+                <div class="radio-group">
+                    <input type="radio" name="pingjia" checked />
+                    <label class="flex center middle"><i></i></label>
+                </div>
+                <div class="label">好评</div>
+            </div>
+            <div class="flex start middle radio-item">
+                <div class="radio-group">
+                    <input type="radio" name="pingjia" />
+                    <label class="flex center middle"><i></i></label>
+                </div>
+                <div class="label">中评</div>
+            </div>
+            <div class="flex start middle radio-item">
+                <div class="radio-group">
+                    <input type="radio" name="pingjia" />
+                    <label class="flex center middle"><i></i></label>
+                </div>
+                <div class="label">差评</div>
+            </div>
+        </div>
+        <div class="star-group flex start middle">
+            <div class="label">商品质量</div>
+            <div class="stars flex start middle">
+                <img src="image/pingjia-star-red.jpg" />
+                <img src="image/pingjia-star-red.jpg" />
+                <img src="image/pingjia-star-red.jpg" />
+                <img src="image/pingjia-star-red.jpg" />
+                <img src="image/pingjia-star-grey.jpg" />
+            </div>
+        </div>
+        <div class="star-group flex start middle">
+            <div class="label">服务态度</div>
+            <div class="stars flex start middle">
+                <img src="image/pingjia-star-red.jpg" />
+                <img src="image/pingjia-star-red.jpg" />
+                <img src="image/pingjia-star-red.jpg" />
+                <img src="image/pingjia-star-red.jpg" />
+                <img src="image/pingjia-star-grey.jpg" />
+            </div>
+        </div>
+        <div class="star-group flex start middle">
+            <div class="label">物流速度</div>
+            <div class="stars flex start middle">
+                <img src="image/pingjia-star-red.jpg" />
+                <img src="image/pingjia-star-red.jpg" />
+                <img src="image/pingjia-star-red.jpg" />
+                <img src="image/pingjia-star-red.jpg" />
+                <img src="image/pingjia-star-grey.jpg" />
+            </div>
+        </div>
+        <div class="address">
+            <div class="line flex space-between stretch">
+                <div class="left flex center top">
+                    <img src="image/location.png" class="location" />
+                </div>
+                <div class="right">
+                    <span class="name">薰悟空</span>
+                    <span class="tel">15602365699</span>上海市静安区永和路118弄东方环球企业中心43号1101室
+                </div>
+            </div>
+            <div class="flex start middle line">
+                <div class="left flex center top">
+                    <img src="image/time.png" />
+                </div>
+                <div class="right">
+                    <span>签收时间：2021-01-23</span> 16：15：13
+                </div>
+            </div>
+        </div>
+        <a href="javascript:;" class="btn-red btn-modal"
+           data-modal="modal-thank">提交评价</a>
+    </div>
+    <div class="bk-cover"></div>
+    <!--modal-thank-->
+    <div class="modal modal-thank">
+        <div class="modal-content">
+            <img src="image/flower.png" />
+            <div class="text">感谢您的评价</div>
+            <div class="text-grey">
+                感谢您的评价，您的评价对于其他客户
+                来说会提供很大的帮助
+            </div>
+        </div>
+        <div class="modal-footer flex center middle">
+            <a href="javascript:;" class="btn-ok">返回</a>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/flexible.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/pingjia-x.js"></script>
+</body>
+</html>

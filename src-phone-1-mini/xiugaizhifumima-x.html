@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/css.css" />
+</head>
+<body class="xiugaizhifumima">
+    <!--header-->
+    <div class="flex center middle header">
+        <a href="javascript:;"><img src="image/back-black.png" class="close" /></a>
+        <div class="text">修改支付密码</div>
+    </div>
+    <!--main-->
+    <div class="main">
+        <div class="items">
+            <div class="item flex space-between middle">
+                <div class="left">旧密码</div>
+                <input class="right" placeholder="请输入旧密码" />
+            </div>
+            <div class="item flex space-between middle">
+                <div class="left">新密码</div>
+                <input class="right" placeholder="请输入6位数字密码" />
+            </div>
+            <div class="item flex space-between middle">
+                <div class="left">确认新密码</div>
+                <input class="right" placeholder="请再次输入6位数字密码" />
+            </div>
+            <div class="item flex space-between middle">
+                <div class="left">手机号</div>
+                <input class="right short" placeholder="请输入手机号"
+                       value="15216890266" />
+                <a href="javascript:;" class="btn-red-line">获取验证码</a>
+            </div>
+            <div class="item flex space-between middle">
+                <div class="left">验证码</div>
+                <input class="right" placeholder="请输入手机验证码" />
+            </div>
+        </div>
+        <a href="javascript:;" class="btn-red btn-modal"
+           data-modal="modal-success">确认修改</a>
+        <div class="ban">请填写正确验证码</div>
+        <div class="ban">请填写完整</div>
+        <div class="ban">两次输入密码不一致</div>
+    </div>
+    <div class="bk-cover"></div>
+    <!--modal-success-->
+    <div class="modal modal-success">
+        <div class="modal-content">
+            <img src="image/circle.jpg" />
+            <div class="text">恭喜您，修改成功</div>
+        </div>
+        <div class="modal-footer flex center middle">
+            <a href="javascript:;" class="btn-ok">返回</a>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/flexible.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+</body>
+</html>

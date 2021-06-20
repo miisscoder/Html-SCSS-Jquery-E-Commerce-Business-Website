@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/css.css" />
+</head>
+<!--data-type="empty" or "all" -->
+<body class="shouhuodizhi" data-type="empty">
+    <!--header-->
+    <div class="flex center middle header">
+        <a href="chankanquanbu.html"><img src="image/back-black.png" class="close" /></a>
+        <div class="text">收货地址</div>
+    </div>
+    <!--main  content-->
+    <div class="main flex column space-between">
+        <div class="address-list">
+            <div class="address">
+                <div class="line-1 flex start middle">
+                    <div class="name">薰悟空</div>
+                    <div class="tel">15602365699</div>
+                </div>
+                <div class="line-2">上海市静安区永和路118弄东方环球企业中心43号1101室</div>
+                <div class="line-3  flex space-between middle">
+                    <div class="left flex start middle">
+                        <div class="radio-group">
+                            <input type="radio" name="default" checked /> <label></label>
+                        </div>
+                        <div class="text">默认地址</div>
+                    </div>
+                    <div class="right flex end middle">
+                        <a href="tianjiashouhuodizhi.html" class="flex center middle btn">
+                            <img src="image/edit.png" /> 编辑
+                        </a>
+                        <a href="javascript:;" class="flex center middle btn btn-modal"
+                           data-modal="modal-delete" />
+                        <img src="image/delete.png" /> 删除
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="address ">
+                <div class="line-1 flex start middle">
+                    <div class="name">薰悟空</div>
+                    <div class="tel">15602365699</div>
+                </div>
+                <div class="line-2">上海市静安区永和路118弄东方环球企业中心43号1101室</div>
+                <div class="line-3  flex space-between middle">
+                    <div class="left flex start middle">
+                        <div class="radio-group">
+                            <input type="radio" name="default" /> <label></label>
+                        </div>
+                        <div class="text">默认地址</div>
+                    </div>
+                    <div class="right flex end middle">
+                        <a href="tianjiashouhuodizhi.html" class="flex center middle btn">
+                            <img src="image/edit.png" /> 编辑
+                        </a>
+                        <a href="javascript:;" class="flex center middle btn btn-modal"
+                           data-modal="modal-delete" />
+                        <img src="image/delete.png" />删除
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--empty for no data-->
+        <div class="empty flex column center middle">
+            <img src="image/location-empty.png" />
+            <div class="text">
+                您还没有收货地址~<br />
+                快去创建吧！
+            </div>
+        </div>
+        <a href="tianjiashouhuodizhi-x.html" class="btn-red">+ 添加收货地址</a>
+    </div>
+    <!--modals-->
+    <div class="bk-cover"></div>
+    <!--modal-delete-->
+    <div class="modal modal-delete">
+        <div class="modal-content">
+            <img src="image/exclamation.png" />
+            <div class="text">您确认要删除该收货地址吗？</div>
+        </div>
+        <div class="modal-footer flex space-between middle">
+            <a href="javascript:;" class="btn-ok">确认删除</a>
+            <a href="javascript:;" class="btn-cancel">再想想</a>
+        </div>
+    </div>
+    <!--modal-area-->
+    <div class="modal modal-area">
+        <div class="modal-content">
+            <img src="image/exclamation.png" />
+            <div class="text">您确认要删除该收货地址吗？</div>
+        </div>
+        <div class="modal-footer flex space-between middle">
+            <a href="javascript:;" class="btn-ok">确认删除</a>
+            <a href="javascript:;" class="btn-cancel">再想想</a>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/flexible.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+</body>
+</html>

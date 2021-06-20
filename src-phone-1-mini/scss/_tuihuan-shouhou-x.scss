@@ -1,0 +1,65 @@
+﻿body.tuihuan-shouhou {
+    background-color: #f6f6f6;
+    /*header*/
+    .header {
+        position: relative;
+        background: #ffffff;
+        height: 1rem;
+
+
+        .close {
+            position: absolute;
+            left: 4%;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 0.2rem;
+            height: auto;
+        }
+
+        .logo {
+            width: 0.5rem;
+            height: 0.5rem;
+            margin-right: 0.2rem;
+        }
+
+        .text {
+            font-size: 0.36rem;
+            line-height: 0.36rem;
+        }
+    }
+    /*main*/
+    .main {
+        height: calc(100vh - 1rem);
+
+        .items {
+            padding-top: 0.7rem;
+
+            .item {
+                width: 92%;
+                height: 1rem;
+                padding: 0 4%;
+                margin-bottom:0.35rem;
+                background-color:#ffffff;
+
+                .left {
+
+                    img {
+                        width: 0.45rem;
+                        height: auto;
+                    }
+
+                    .title {
+                        line-height: 1rem;
+                        padding-left: 0.4rem;
+                        font-size: 0.28rem;
+                    }
+                }
+
+                .right {
+                    height: 0.24rem;
+                    width: auto;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,327 @@
+﻿body.huanhuoxiangnqing {
+    background-color: #f6f6f6;
+    /*header*/
+    .header {
+        position: relative;
+        background: #ffffff;
+        height: 1rem;
+
+
+        .close {
+            position: absolute;
+            left: 4%;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 0.2rem;
+            height: auto;
+        }
+
+        .logo {
+            width: 0.5rem;
+            height: 0.5rem;
+            margin-right: 0.2rem;
+        }
+
+        .text {
+            font-size: 0.36rem;
+            line-height: 0.36rem;
+            -webkit-text-fill-color: #010101;
+            color: #010101;
+        }
+    }
+    /*red-pannel*/
+    .red-pannel {
+        height: 1.85rem;
+        background-color: #c6010c;
+        color: #ffffff;
+        -webkit-text-fill-color: #ffffff;
+        padding: 0.4rem 6%;
+
+        .line-1 {
+            font-size: 0.32rem;
+        }
+
+        .line-3 {
+            margin-top: 0.2rem;
+            
+            font-size: 0.26rem;
+        }
+    }
+    /*main*/
+    .main {
+        margin-top: 0.2rem;
+        padding-bottom: 0.5rem;
+
+        .item {
+            background-color: #ffffff;
+            margin-left: 4%;
+            margin-right: 4%;
+            height: 1.95rem;
+            border-radius: 0.1rem;
+            box-shadow: 0 0 3px rgba(0,0,0,0.1);
+            padding-left: 0.14rem;
+            padding-right: 0.14rem;
+
+
+            img.left {
+                width: 1.26rem;
+                height: 1.2rem;
+                border-radius: 0.05rem;
+            }
+
+            .right {
+                padding-left: 0.13rem;
+                width: calc(100% - 1.53rem);
+
+                .title {
+                    font-size: 0.22rem;
+                    margin-bottom: 0.12rem;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box; //作为弹性伸缩盒子模型显示。
+                    -webkit-box-orient: vertical; //设置伸缩盒子的子元素排列方式--从上到下垂直排列
+                    -webkit-line-clamp: 2; //显示的行
+                    height: 0.5rem;
+                }
+
+                .amount {
+                    font-size: 0.2rem;
+                    margin-bottom: 0.14rem;
+
+                    span {
+                        padding-right: 0.2rem;
+                    }
+                }
+
+                .line-2 {
+                    font-size: 0.24rem;
+                    color: #c6010c;
+                    -webkit-text-fill-color: #c6010c;
+                }
+            }
+        }
+
+        .section {
+            background-color: #ffffff;
+            margin-left: 4%;
+            margin-right: 4%;
+            margin-top: 0.2rem;
+            overflow: hidden;
+
+            .line-text {
+                height: 1.25rem;
+                border-bottom: 1px solid #f6f6f6;
+                padding-left: 0.14rem;
+                padding-right: 0.14rem;
+
+                .text-bannel-2 {
+                    width: 13%;
+                    margin-right: 5%;
+                    height: 0.4rem;
+                    font-size: 0.24rem;
+                    text-align: center;
+                    line-height: 0.4rem;
+                    border-radius: unset;
+                    background-color: #e7e7e7;
+                }
+
+                .title {
+                    padding-right: 0.5rem;
+                    font-size: 0.26rem;
+
+                    span {
+                        margin-right: 0.4rem;
+                    }
+                }
+
+                .text {
+                    font-size: 0.26rem;
+                    margin-right: 0.1rem;
+                }
+            }
+
+            &.section-wuliu {
+                .line-text {
+                    padding-top: 0.1rem;
+                    padding-bottom: 0.1rem;
+                    height: 1.36rem;
+                    line-height: 1.7;
+                }
+                /*items*/
+                .items {
+                    background-color: #ffffff;
+                    padding-top: 0.4rem;
+                    padding-bottom: 0.6rem;
+                    position: relative;
+                    /*item-time*/
+                    .item-time {
+                        margin: 0 4%;
+                        position: relative;
+
+                        .left {
+                            width: 25%;
+                            position: relative;
+                            height: inherit;
+
+                            .dot {
+                                background-color: #a3a3a3;
+                                width: 0.18rem;
+                                height: 0.18rem;
+                                border-radius: 50%;
+                                z-index: 3;
+                            }
+
+                            .line {
+                                height: calc(100% + 1px);
+                                width: 3px;
+                                position: absolute;
+                                top: 0;
+                                left: calc(50% - 1.5px);
+                                background-color: #dcdcdc;
+                                z-index: 0;
+                            }
+                        }
+
+                        .right {
+                            width: 75%;
+                            padding-top: 0.22rem;
+                            padding-bottom: 0.22rem;
+                            border-bottom: 1px solid #e9e9e9;
+
+
+                            .text {
+                                font-size: 0.22rem;
+                                line-height: 1.5;
+                            }
+                        }
+
+                        &.active {
+                            .left {
+                                .dot {
+                                    border: 3px solid #ff9898;
+                                    background-color: #c6010c;
+                                }
+
+                                .line {
+                                    top: 50%;
+                                    height: calc(50% + 1px);
+                                }
+                            }
+                        }
+                    }
+
+
+                    .icon {
+                        position: absolute;
+                        bottom: 0.16rem;
+                        left: 0;
+                        width: 100%;
+                        height: 0.18rem;
+                        cursor: pointer;
+
+                        img {
+                            width: 0.18rem;
+                            height: auto;
+                            transition: transform linear 1s;
+                            display: block;
+                            margin: 0 auto;
+                        }
+
+                        &[data-status="expand"] {
+                            img {
+                                transform: rotate(0deg);
+                            }
+                        }
+
+                        &[data-status="foldup"] {
+                            img {
+                                transform: rotate(180deg);
+                            }
+                        }
+                    }
+
+                    &[data-status="expand"] {
+                        &.items {
+                            border-top: 0.2rem solid #f6f6f6;
+                            padding-top: 1rem;
+                            padding-bottom: 1.2rem;
+
+                            .icon {
+                                bottom: 0.46rem;
+
+                                img {
+                                    width: 0.3rem;
+                                }
+                            }
+
+                            .item-time {
+                                display: flex;
+
+                                &.last {
+                                    .line {
+                                        height: calc(50% + 1px);
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &[data-status="foldup"] {
+                        .item-time {
+                            display: none;
+
+                            &.first {
+                                display: flex;
+
+                                .line {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .address {
+            padding: 0.1rem 0;
+            margin: 0.2rem 4%;
+            background-color: #ffffff;
+            border-radius: 0.1rem;
+
+            .line {
+                margin-top: 0.2rem;
+                margin-bottom: 0.2rem;
+
+                .left {
+                    width: 0.6rem;
+
+                    img.location {
+                        width: auto;
+                        height: 0.4rem;
+                        margin-top: 20%;
+                    }
+                }
+
+                .right {
+                    width: calc(100% - 0.7rem);
+                    font-size: 0.22rem;
+                    padding-right: 0.1rem;
+
+                    .line-1 {
+                        margin-top: 0.2rem;
+
+                        span {
+                            margin-right: 0.9rem;
+                        }
+                    }
+
+                    .line-2 {
+                        margin-top: 0.1rem;
+                        margin-bottom: 0.2rem;
+                    }
+                }
+            }
+        }
+    }
+}

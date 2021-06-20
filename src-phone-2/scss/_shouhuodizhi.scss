@@ -1,0 +1,193 @@
+﻿body.shouhuodizhi {
+    background-color: #f6f6f6;
+    /*header*/
+    .header {
+        position: relative;
+        background: #ffffff;
+        height: 1rem;
+
+
+        .close {
+            position: absolute;
+            left: 4%;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 0.2rem;
+            height: auto;
+        }
+
+        .logo {
+            width: 0.5rem;
+            height: 0.5rem;
+            margin-right: 0.2rem;
+        }
+
+        .text {
+            font-size: 0.36rem;
+            line-height: 0.36rem;
+            -webkit-text-fill-color: #010101;
+            color: #010101;
+        }
+    }
+    /*main*/
+    .main {
+        min-height: calc(100vh - 1rem);
+
+        .address-list {
+            margin-top: 0.2rem;
+
+            .address {
+                background-color: #ffffff;
+                border-radius: 0.15rem;
+                margin: 0.25rem 4%;
+
+                .line-1 {
+                    font-size: 0.3rem;
+                    padding-left: 0.35rem;
+                    padding-right: 0.35rem;
+                    padding-top: 0.25rem;
+                    padding-bottom: 0.12rem;
+                    line-height: 1.5;
+
+                    .name {
+                        margin-right: 0.55rem;
+                    }
+
+                    .tel {
+                    }
+                }
+
+                .line-2 {
+                    -webkit-text-fill-color: #7e7e7e;
+                    color: #7e7e7e;
+                    font-size: 0.24rem;
+                    padding-left: 0.35rem;
+                    padding-right: 0.35rem;
+                    padding-bottom: 0.25rem;
+                }
+
+                .line-3 {
+                    border-top: 1px solid #eeeeee;
+                    height: 0.7rem;
+                    padding-left: 0.35rem;
+                    padding-right: 0.15rem;
+
+                    .left {
+                        .radio-group {
+                            width: 0.2rem;
+                            height: 0.2rem;
+                            margin: 0;
+                            margin-right: 0.072rem;
+
+                            input[type=radio] + label {
+                                border-color: #a1a1a1;
+                            }
+                        }
+
+                        .text {
+                            font-size: 0.22rem;
+                            -webkit-text-fill-color: #9f9f9f;
+                            color: #9f9f9f;
+                        }
+                    }
+
+                    .right {
+                        .btn {
+                            font-size: 0.22rem;
+                            -webkit-text-fill-color: #9f9f9f;
+                            color: #9f9f9f;
+                            margin-left: 0.35rem;
+
+                            img {
+                                height: 0.19rem;
+                                width: auto;
+                                margin-right: 0.06rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .empty {
+            img {
+                margin-top: 30%;
+                width: 3rem;
+            }
+
+            .text {
+                font-size: 0.28rem;
+                -webkit-text-fill-color: #6f6f6f;
+                color: #6f6f6f;
+                text-align: center;
+            }
+        }
+
+        .btn-red {
+            font-size: 0.34rem;
+            height: 0.73rem;
+            line-height: 0.73rem;
+            margin-bottom: 0.3rem;
+            width: 90%;
+            border-radius: 0.365rem;
+        }
+    }
+
+
+    .modal-delete {
+        border-radius: 0.15rem;
+
+        img {
+            height: 1.15rem;
+            width: auto;
+            display: block;
+            margin: 0.6rem auto 0.4rem;
+        }
+
+        .text {
+            text-align: center;
+            font-size: 0.26rem;
+            margin-bottom: 0.6rem;
+        }
+
+        .modal-footer {
+            height: 0.9rem;
+            border-top: 1px solid #eeeeee;
+
+            .btn-cancel {
+                width: calc(50% - 1px);
+                height: 0.9rem;
+                display: block;
+                line-height: 0.9rem;
+                text-align: center;
+                font-size: 0.28rem;
+                -webkit-text-fill-color: #9f9f9f;
+                color: #9f9f9f;
+            }
+
+            .btn-ok {
+                width: 50%;
+                height: 0.9rem;
+                display: block;
+                line-height: 0.9rem;
+                text-align: center;
+                font-size: 0.28rem;
+                -webkit-text-fill-color: #c6010c;
+                color: #c6010c;
+                border-right: 1px solid #eeeeee;
+            }
+        }
+    }
+
+    &[data-type="all"] {
+        .empty {
+            display: none;
+        }
+    }
+
+    &[data-type="empty"] {
+        .address-list {
+            display: none;
+        }
+    }
+}

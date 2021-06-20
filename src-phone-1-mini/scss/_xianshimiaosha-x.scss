@@ -1,0 +1,259 @@
+﻿body.xianshimiaosha {
+    background-color: #f6f6f6;
+    /*header*/
+    padding: 0;
+
+    .header {
+        position: relative;
+        background: #ffffff;
+        height: 1rem;
+
+
+        .close {
+            position: absolute;
+            left: 4%;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 0.2rem;
+            height: auto;
+        }
+
+        .logo {
+            width: 0.5rem;
+            height: 0.5rem;
+            margin-right: 0.2rem;
+        }
+
+        .text {
+            font-size: 0.36rem;
+            line-height: 0.36rem;
+            -webkit-text-fill-color: #010101;
+            color: #010101;
+        }
+    }
+    /*main*/
+    .main {
+        height: calc(100vh - 1rem);
+        border-top: 1px solid #f3f3f3;
+        /*opacity: 0.5;*/
+        .tab-template {
+
+            .tabs {
+                width: 100%;
+                background-color: #ffffff;
+                margin-top: 0.1rem;
+                margin-bottom: 0.1rem;
+
+                .tab {
+                    height: 1rem;
+                    font-size: 0.3rem;
+                    width: 20%;
+
+                    .time {
+                        font-size: 0.3rem;
+                        margin-bottom: 0.05rem;
+                    }
+
+                    .text {
+                        font-size: 0.22rem;
+                        -webkit-text-fill-color: #b0b0b0;
+                        color: #b0b0b0;
+                    }
+
+                    &.active {
+                        background-color: #c6010c;
+                        position: relative;
+
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            display: block;
+                            border-color: #c6010c transparent transparent transparent;
+                            border-style: solid;
+                            border-width: 10px 10px;
+                            top: 100%;
+                        }
+
+                        .time, .text {
+                            -webkit-text-fill-color: #ffffff;
+                            color: #ffffff;
+                        }
+                    }
+                }
+            }
+
+            .tab-containers {
+                .tab-container {
+                    height: calc(100vh - 2.2rem);
+                    overflow: hidden;
+
+                    .bar {
+                        line-height: 1rem;
+                        margin-bottom: 0.35rem;
+                        background-color: #ffffff;
+                        width: 92%;
+                        padding: 0 4%;
+
+                        .line {
+                            background-color: #f6f6f6;
+                            width: 20%;
+                            height: 1px;
+                        }
+
+                        .text {
+                            font-size: 0.3rem;
+                        }
+
+                        .time {
+                            font-size: 0.3rem;
+                            -webkit-text-fill-color: #c6010c;
+                            color: #c6010c;
+                            margin-left: 0.2rem;
+                        }
+                    }
+
+                    .items {
+                        height: calc(100vh - 2.2rem - 1.2rem - 0.4rem);
+                        overflow: auto;
+
+                        .item {
+                            margin-bottom: 0.1rem;
+                            background-color: #ffffff;
+                            box-shadow: 0 0 3px rgba(0,0,0,0.1);
+
+                            .line-1 {
+                                height: 0.6rem;
+                                font-size: 0.24rem;
+                                -webkit-text-fill-color: #adadad;
+                                color: #adadad;
+                                margin: 0 4%;
+                                border-bottom: 1px solid #f6f6f6;
+
+                                .time {
+                                    span {
+                                        margin-right: 0.46rem;
+                                    }
+                                }
+
+                                img.right {
+                                    height: 0.3rem;
+                                    width: auto;
+                                }
+                            }
+
+                            .line-2 {
+                                padding: 0.325rem 4%;
+
+
+                                img {
+                                    width: 1.8rem;
+                                    height: 1.7rem;
+                                    border-radius: 0.05rem;
+                                }
+
+                                .title {
+                                    font-size: 0.22rem;
+                                    margin-left: 0.3rem;
+                                    line-height: 1.4;
+                                    overflow: hidden;
+                                }
+                            }
+                        }
+
+                        .item {
+                            margin-bottom: 0.1rem;
+                            background-color: #ffffff;
+                            box-shadow: 0 0 3px rgba(0,0,0,0.1);
+                            padding: 0.325rem 4%;
+                            width: 92%;
+
+                            img {
+                                width: 1.8rem;
+                                height: 1.7rem;
+                                border-radius: 0.05rem;
+                            }
+
+                            .right {
+                                margin-left: 0.15rem;
+                                width: calc(100% - 1.8rem - 0.15rem);
+                                height: 1.6rem;
+
+                                .title {
+                                    font-size: 0.26rem;
+                                    line-height: 1.4;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    display: -webkit-box; //作为弹性伸缩盒子模型显示。
+                                    -webkit-box-orient: vertical; //设置伸缩盒子的子元素排列方式--从上到下垂直排列
+                                    -webkit-line-clamp: 3; //显示的行
+                                }
+
+                                .infor {
+                                    .left {
+                                        .red {
+                                            -webkit-text-fill-color: #c6010c;
+                                            color: #c6010c;
+                                            font-size: 0.26rem;
+                                        }
+
+                                        .text {
+                                            -webkit-text-fill-color: #acacac;
+                                            color: #acacac;
+                                            font-size: 0.22rem;
+                                            text-decoration: line-through;
+                                            margin-left: 0.2rem;
+                                        }
+                                    }
+
+                                    .btn {
+                                        width: 1.6rem;
+                                        height: 0.6rem;
+                                        line-height: 0.6rem;
+                                        font-size: 0.28rem;
+                                        border-radius: 0.05rem;
+                                        margin: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /*modal-none*/
+    .modal-none {
+        border-radius: 0.15rem;
+
+        img {
+            height: 1.15rem;
+            width: auto;
+            display: block;
+            margin: 0.6rem auto 0.4rem;
+        }
+
+        .text {
+            text-align: center;
+            font-size: 0.26rem;
+            margin-bottom: 0.6rem;
+        }
+
+        .modal-footer {
+            height: 0.9rem;
+            border-top: 1px solid #eeeeee;
+
+
+            .btn-ok {
+                width: 50%;
+                height: 0.9rem;
+                display: block;
+                line-height: 0.9rem;
+                text-align: center;
+                font-size: 0.28rem;
+                -webkit-text-fill-color: #c6010c;
+                color: #c6010c;
+                border-right: 1px solid #eeeeee;
+            }
+        }
+    }
+}

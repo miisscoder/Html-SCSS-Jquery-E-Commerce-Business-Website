@@ -1,0 +1,118 @@
+﻿body.gerenzhongxin {
+    background-color: #f6f6f6;
+    /*header*/
+    .header {
+        position: relative;
+        background: #ffffff;
+        height: 1rem;
+
+
+        .close {
+            position: absolute;
+            left: 4%;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 0.2rem;
+            height: auto;
+        }
+
+        .logo {
+            width: 0.5rem;
+            height: 0.5rem;
+            margin-right: 0.2rem;
+        }
+
+        .text {
+            font-size: 0.36rem;
+            line-height: 0.36rem;
+        }
+    }
+    /*main*/
+    .main {
+        height: calc(100vh - 1rem);
+
+        .items {
+            padding-top: 0.2rem;
+
+            .item {
+                width: 88%;
+                height: 1rem;
+                padding: 0 4% 0 8%;
+                margin-bottom: 0.2rem;
+                background-color: #ffffff;
+
+                .left {
+
+                    img {
+                        width: 0.45rem;
+                        height: auto;
+                    }
+
+                    .title {
+                        line-height: 1rem;
+                        padding-left: 0.3rem;
+                        font-size: 0.3rem;
+                    }
+                }
+
+                .right {
+                    height: 0.24rem;
+                    width: auto;
+                }
+            }
+        }
+
+        .btn-red {
+            margin: 0.7rem auto;
+            height:0.86rem;
+            line-height:0.86rem;
+            border-radius:0.43rem;
+            font-size:0.34rem;
+            width:66%;
+
+        }
+    }
+    /*modal-logout */
+    .modal-logout {
+        border-radius: 0.15rem;
+
+        .text {
+            text-align: center;
+            font-size: 0.26rem;
+            margin-bottom: 0.6rem;
+            margin-top: 0.9rem;
+        }
+
+        .modal-footer {
+            height: 0.8rem;
+            border-top: 1px solid #eeeeee;
+
+            .btn-cancel {
+                width: calc(50% - 1px);
+                height: 0.8rem;
+                display: block;
+                line-height: 0.8rem;
+                text-align: center;
+                font-size: 0.28rem;
+                -webkit-text-fill-color: #9f9f9f;
+                color: #9f9f9f;
+            }
+
+            .btn-ok {
+                width: 50%;
+                height: 0.9rem;
+                display: block;
+                line-height: 0.9rem;
+                text-align: center;
+                font-size: 0.28rem;
+                -webkit-text-fill-color: #c6010c;
+                color: #c6010c;
+                border-right: 1px solid #eeeeee;
+
+                &.long {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

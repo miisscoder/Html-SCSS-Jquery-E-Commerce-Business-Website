@@ -1,0 +1,386 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/css.css" />
+</head>
+<body class="shenqingtuihuanhuo">
+    <!--header-->
+    <div class="flex center middle header">
+        <img src="image/back-black.png" class="close go-back" />
+        <div class="text">申请退换货</div>
+    </div>
+    <!--search-section-->
+    <div class="search-section flex space-between middle">
+        <div class="search-group flex start middle">
+            <img src="image/search-grey.png" class="icon" />
+            <span>|</span>
+            <input placeholder="商品名称/订单编号" />
+        </div>
+        <!--data-type: open close-->
+        <a href="javascript:;" class="option btn-modal btn-modal-shaixuan
+               flex column center middle" data-type="close"
+           onclick="$(this).attr('data-type', $(this).attr('data-type') === 'open' ? 'close': 'open')"
+           data-modal="modal-shaixuan">
+            <img src="image/filter.png" class="modal-close" />
+            <img src="image/filter-red.png" class="modal-open" />
+            筛选
+        </a>
+    </div>
+    <!--main-->
+    <!--data-type: empty , all-->
+    <div class="main" data-type="empty">
+        <div class="empty flex column center middle">
+            <img src="image/none-order.png" />
+            <div class="text">暂无订单</div>
+        </div>
+        <div class="items">
+            <!--none-->
+            <div class="item">
+                <div class="flex space-between middle line-1">
+                    <div class="left flex column center top">
+                        <div class="text">订单编号：20210107563265</div>
+                        <div class="text">创建日期：2021-01-07  10:13:33</div>
+                    </div>
+                    <div class="right ">
+
+                    </div>
+                </div>
+                <a href="dingdanxiangqing-x.html" class="flex start middle line-2">
+                    <img src="image/product.jpg" class="left" />
+                    <div class="right flex column center top">
+                        <div class="title">
+                            欧扎克（OCAK）臻享版每日坚果礼盒20g/袋30袋装
+                        </div>
+                        <div class="line-2-2 flex start top">
+                            <div class="amount">20g*30袋</div>
+                            <div class="amount">*1</div>
+                        </div>
+                    </div>
+                </a>
+                <div class="flex space-between middle line-3">
+                    <div class="overtime"></div>
+                    <div class="flex end middle">
+                        <a href="javascript:;" class="btn-black-line">联系客服</a>
+                        <a href="javascript:;" class="btn-red-line ">申请退换</a>
+                    </div>
+                </div>
+            </div>
+            <!--申请中-->
+            <div class="item">
+                <div class="flex space-between middle line-1">
+                    <div class="left flex column center top">
+                        <div class="text">订单编号：20210107563265</div>
+                        <div class="text">创建日期：2021-01-07  10:13:33</div>
+                    </div>
+                    <div class="right">
+                        申请中
+                    </div>
+                </div>
+                <a href="dingdanxiangqing-x.html" class="flex start middle line-2">
+                    <img src="image/product.jpg" class="left" />
+                    <div class="right flex column center top">
+                        <div class="title">
+                            欧扎克（OCAK）臻享版每日坚果礼盒
+                            20g/袋 30袋装
+                        </div>
+                        <div class="line-2-2 flex start top">
+                            <div class="amount">20g*30袋</div>
+                            <div class="amount">*1</div>
+                        </div>
+                    </div>
+                </a>
+                <div class="flex space-between middle line-3">
+                    <div class="overtime"></div>
+                    <div class="flex end middle">
+                        <a href="javascript:;" class="btn-black-line">联系客服</a>
+                        <a href="javascript:;" class="btn-red-line ">查看详情</a>
+                    </div>
+                </div>
+            </div>
+            <!--申请成功-->
+            <div class="item">
+                <div class="flex space-between middle line-1">
+                    <div class="left flex column center top">
+                        <div class="text">订单编号：20210107563265</div>
+                        <div class="text">创建日期：2021-01-07  10:13:33</div>
+                    </div>
+                    <div class="right">
+                        申请成功
+                    </div>
+                </div>
+                <a href="dingdanxiangqing-x.html" class="flex start middle line-2">
+                    <img src="image/product.jpg" class="left" />
+                    <div class="right flex column center top">
+                        <div class="title">
+                            欧扎克（OCAK）臻享版每日坚果礼盒
+                            20g/袋 30袋装
+                        </div>
+                        <div class="line-2-2 flex start top">
+                            <div class="amount">20g*30袋</div>
+                            <div class="amount">*1</div>
+                        </div>
+                    </div>
+                </a>
+                <div class="flex space-between middle line-3">
+                    <div class="overtime"></div>
+                    <div class="flex end middle">
+                        <a href="javascript:;" class="btn-black-line">联系客服</a>
+                        <a href="javascript:;" class="btn-black-line long">填写退回单号</a>
+                        <a href="javascript:;" class="btn-red-line ">查看详情</a>
+                    </div>
+                </div>
+            </div>
+            <!--申请失败-->
+            <div class="item">
+                <div class="flex space-between middle line-1">
+                    <div class="left flex column center top">
+                        <div class="text">订单编号：20210107563265</div>
+                        <div class="text">创建日期：2021-01-07  10:13:33</div>
+                    </div>
+                    <div class="right">
+                        申请失败
+                    </div>
+                </div>
+                <a href="dingdanxiangqing-x.html" class="flex start middle line-2">
+                    <img src="image/product.jpg" class="left" />
+                    <div class="right flex column center top">
+                        <div class="title">
+                            欧扎克（OCAK）臻享版每日坚果礼盒
+                            20g/袋 30袋装
+                        </div>
+                        <div class="line-2-2 flex start top">
+                            <div class="amount">20g*30袋</div>
+                            <div class="amount">*1</div>
+                        </div>
+                    </div>
+                </a>
+                <div class="flex space-between middle line-3">
+                    <div class="overtime"></div>
+                    <div class="flex end middle">
+                        <a href="javascript:;" class="btn-black-line">联系客服</a>
+                        <a href="javascript:;" class="btn-black-line ">查看原因</a>
+                    </div>
+                </div>
+            </div>
+            <!--退换成功-->
+            <div class="item">
+                <div class="flex space-between middle line-1">
+                    <div class="left flex column center top">
+                        <div class="text">订单编号：20210107563265</div>
+                        <div class="text">创建日期：2021-01-07  10:13:33</div>
+                    </div>
+                    <div class="right">
+                        退换成功
+                    </div>
+                </div>
+                <a href="dingdanxiangqing-x.html" class="flex start middle line-2">
+                    <img src="image/product.jpg" class="left" />
+                    <div class="right flex column center top">
+                        <div class="title">
+                            欧扎克（OCAK）臻享版每日坚果礼盒
+                            20g/袋 30袋装
+                        </div>
+                        <div class="line-2-2 flex start top">
+                            <div class="amount">20g*30袋</div>
+                            <div class="amount">*1</div>
+                        </div>
+                    </div>
+                </a>
+                <div class="flex space-between middle line-3">
+                    <div class="overtime"></div>
+                    <div class="flex end middle">
+                        <a href="javascript:;" class="btn-black-line">联系客服</a>
+                        <a href="javascript:;" class="btn-red-line ">查看详情</a>
+                    </div>
+                </div>
+            </div>
+            <!--退款成功-->
+            <div class="item">
+                <div class="flex space-between middle line-1">
+                    <div class="left flex column center top">
+                        <div class="text">订单编号：20210107563265</div>
+                        <div class="text">创建日期：2021-01-07  10:13:33</div>
+                    </div>
+                    <div class="right">
+                        退款成功
+                    </div>
+                </div>
+                <a href="dingdanxiangqing-x.html" class="flex start middle line-2">
+                    <img src="image/product.jpg" class="left" />
+                    <div class="right flex column center top">
+                        <div class="title">
+                            欧扎克（OCAK）臻享版每日坚果礼盒
+                            20g/袋 30袋装
+                        </div>
+                        <div class="line-2-2 flex start top">
+                            <div class="amount">20g*30袋</div>
+                            <div class="amount">*1</div>
+                        </div>
+                    </div>
+                </a>
+                <div class="flex space-between middle line-3">
+                    <div class="overtime"></div>
+                    <div class="flex end middle">
+                        <a href="javascript:;" class="btn-black-line">联系客服</a>
+                        <a href="javascript:;" class="btn-red-line ">查看详情</a>
+                    </div>
+                </div>
+            </div>
+            <!--超时-->
+            <div class="item">
+                <div class="flex space-between middle line-1">
+                    <div class="left flex column center top">
+                        <div class="text">订单编号：20210107563265</div>
+                        <div class="text">创建日期：2021-01-07  10:13:33</div>
+                    </div>
+                    <div class="right">
+                    </div>
+                </div>
+                <a href="dingdanxiangqing-x.html" class="flex start middle line-2">
+                    <img src="image/product.jpg" class="left" />
+                    <div class="right flex column center top">
+                        <div class="title">
+                            欧扎克（OCAK）臻享版每日坚果礼盒
+                            20g/袋 30袋装
+                        </div>
+                        <div class="line-2-2 flex start top">
+                            <div class="amount">20g*30袋</div>
+                            <div class="amount">*1</div>
+                        </div>
+                    </div>
+                </a>
+                <div class="flex space-between middle line-3">
+                    <div class="overtime flex start middle">
+                        已超售后时间<img src="image/question.jpg" />
+                    </div>
+                    <div class="flex end middle">
+                        <a href="javascript:;" class="btn-black-line">联系客服</a>
+                        <a href="javascript:;" class="btn-black-line btn-modal"
+                           onclick="$('.bk-cover').css('top', '0');"
+                           data-modal="modal-reject">申请退换</a>
+                    </div>
+                </div>
+            </div>
+            <!--已取消-->
+            <div class="item">
+                <div class="flex space-between middle line-1">
+                    <div class="left flex column center top">
+                        <div class="text">订单编号：20210107563265</div>
+                        <div class="text">创建日期：2021-01-07  10:13:33</div>
+                    </div>
+                    <div class="right">
+                        已取消
+                    </div>
+                </div>
+                <a href="dingdanxiangqing-x.html" class="flex start middle line-2">
+                    <img src="image/product.jpg" class="left" />
+                    <div class="right flex column center top">
+                        <div class="title">
+                            欧扎克（OCAK）臻享版每日坚果礼盒
+                            20g/袋 30袋装
+                        </div>
+                        <div class="line-2-2 flex start top">
+                            <div class="amount">20g*30袋</div>
+                            <div class="amount">*1</div>
+                        </div>
+                    </div>
+                </a>
+                <div class="flex space-between middle line-3">
+                    <div class="overtime flex start middle">
+                    </div>
+                    <div class="flex end middle">
+                        <a href="javascript:;" class="btn-black-line">联系客服</a>
+                        <a href="javascript:;" class="btn-black-line">查看详情</a>
+                    </div>
+                </div>
+            </div>
+            <!--提货券订单-->
+            <div class="item ban-item">
+                <div class="ban">
+                    提货券订单
+                </div>
+                <div class="flex space-between middle line-1">
+                    <div class="left flex column center top">
+                        <div class="text">订单编号：20210107563265</div>
+                        <div class="text">创建日期：2021-01-07  10:13:33</div>
+                    </div>
+                    <div class="right">
+                        待收货
+                    </div>
+                </div>
+                <a href="dingdanxiangqing-x.html" class="flex start middle line-2">
+                    <img src="image/product.jpg" class="left" />
+                    <div class="right flex column center top">
+                        <div class="title">
+                            欧扎克（OCAK）臻享版每日坚果礼盒
+                            20g/袋 30袋装
+                        </div>
+                        <div class="line-2-2 flex start top">
+                            <div class="amount">20g*30袋</div>
+                            <div class="amount">*1</div>
+                        </div>
+                    </div>
+                </a>
+                <div class="flex space-between middle line-3">
+                    <div class="overtime flex start middle">
+                    </div>
+                    <div class="flex end middle">
+                        <a href="javascript:;" class="btn-black-line">查看物流</a>
+                        <a href="javascript:;" class="btn-red-line ">确认收货</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--bk-cover-->
+    <div class="bk-cover"></div>
+    <!--modal-shaixuan-->
+    <div class="modal modal-shaixuan">
+        <div class="modal-content">
+            <div class="btns flex start top wrap">
+                <div class="radio-group">
+                    <input type="radio" checked name="fenlei" />
+                    <div class="text">全部</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="fenlei" />
+                    <div class="text">一个月内</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="fenlei" />
+                    <div class="text">一个月至三个月</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="fenlei" />
+                    <div class="text">三个月至六个月</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="fenlei" />
+                    <div class="text">六个月至一年</div>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="fenlei" />
+                    <div class="text">一年以上</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--modal-reject-->
+    <div class="modal modal-reject">
+        <div class="modal-content">
+            <div class="text">抱歉，您已超过售后申请时效</div>
+        </div>
+        <div class="modal-footer flex center middle">
+            <a href="javascript:;" class="btn-ok">返回</a>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/flexible.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,325 @@
+﻿
+body {
+    margin: 0;
+    padding: 0;
+    -webkit-opacity: 1;
+    -webkit-text-fill-color: #000000;
+    color: #000000;
+    min-height: fill-available;
+    min-height: -webkit-fill-available;
+    height: 100vh;
+    position: relative;
+
+}
+
+a {
+    -webkit-text-fill-color: inherit;
+    -webkit-opacity: 1;
+    color: inherit;
+    text-decoration: none;
+}
+
+input {
+    &::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+        -webkit-text-fill-color: #b18b69;
+        color: #b18b69;
+    }
+
+    &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        -webkit-text-fill-color: #b18b69;
+        color: #b18b69;
+    }
+
+    &::-moz-placeholder { /* Mozilla Firefox 19+ */
+        -webkit-text-fill-color: #b18b69;
+        color: #b18b69;
+    }
+
+    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        -webkit-text-fill-color: #b18b69;
+        color: #b18b69;
+    }
+}
+
+// 数字加减
+.number-change-group {
+    width: 1.6rem;
+    height: 0.45rem;
+    border-radius: 0.225rem;
+    border: 1px solid #b6b6b6;
+    overflow: hidden;
+
+    .minus, .add {
+        font-size: 0.327rem;
+        text-align: center;
+        width: 0.25rem;
+        height: 0.25rem;
+        line-height: 0.25rem;
+        display: block;
+        -webkit-text-fill-color: #b6b6b6;
+        color: #b6b6b6;
+        border-radius: 0.125rem;
+        border: 1px solid #b6b6b6;
+        cursor: pointer;
+    }
+
+    .number {
+        width: 0.7rem;
+        height: 100%;
+        border: none;
+        text-align: center;
+        font-size: 0.27rem;
+    }
+}
+
+
+/*checkbox*/
+.checkbox-group, .radio-group {
+    width: 25px;
+    height: 25px;
+    position: relative;
+
+    input[type=checkbox] + label, input[type=radio] + label {
+        display: block;
+        width: calc(100% - 1px);
+        height: calc(100% - 1px);
+        cursor: pointer;
+        background: #ffffff;
+        margin-bottom: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: 1px solid red;
+        border-radius: 50%;
+        z-index: 1;
+    }
+
+    input[type=checkbox]:checked + label, input[type=radio]:checked + label {
+        display: block;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        background: url(../image/checked.png) no-repeat 0 0;
+        background-position: center;
+        background-size: contain;
+        margin-bottom: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        border: none;
+        border-radius: 50%;
+    }
+
+    input[type=checkbox], input[type=radio] {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+
+
+/*checkbox*/
+.checkbox-group, .radio-group {
+    width: 25px;
+    height: 25px;
+    position: relative;
+
+    input[type=checkbox] + label,
+    input[type=radio] + label {
+        display: block;
+        width: calc(100% - 1px);
+        height: calc(100% - 1px);
+        cursor: pointer;
+        background: #ffffff;
+        margin-bottom: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: 1px solid red;
+        border-radius: 50%;
+        z-index: 1;
+    }
+
+    input[type=checkbox]:checked + label,
+    input[type=radio]:checked + label {
+        display: block;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        background: url(../image/checked.png) no-repeat 0 0;
+        background-position: center;
+        background-size: contain;
+        margin-bottom: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        border: none;
+        border-radius: 50%;
+    }
+
+    input[type=checkbox], input[type=radio] {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+/*button*/
+.btn-red {
+    height: 0.67rem;
+    line-height: 0.67rem;
+    width: 76%;
+    margin: 0 auto;
+    display: block;
+    border-radius: 0.35rem;
+    font-size: 0.36rem;
+    -webkit-text-fill-color: #ffffff;
+    color: #ffffff;
+    text-align: center;
+    background-color: #c5010c;
+}
+
+/*button*/
+.btn-orange {
+    margin: 0 auto;
+    display: block;
+    -webkit-text-fill-color: #ffffff;
+    color: #ffffff;
+    text-align: center;
+    background-color: #ff8701;
+}
+
+
+/*button*/
+.btn-grey {
+    margin: 0 auto;
+    display: block;
+    -webkit-text-fill-color: #ffffff;
+    color: #ffffff;
+    text-align: center;
+    background-color: #a9a9a9;
+}
+
+
+.btn-red-line {
+    height: 0.67rem;
+    line-height: 0.67rem;
+    margin: 0 auto;
+    display: block;
+    border-radius: 0.35rem;
+    font-size: 0.36rem;
+    -webkit-text-fill-color: #c5010c;
+    color: #c5010c;
+    text-align: center;
+    border: 1px solid #c5010c;
+}
+
+
+.btn-black-line {
+    height: 0.67rem;
+    line-height: 0.67rem;
+    margin: 0 auto;
+    display: block;
+    border-radius: 0.35rem;
+    font-size: 0.36rem;
+    -webkit-text-fill-color: #323232;
+    color: #323232;
+    text-align: center;
+    border: 1px solid #323232;
+}
+
+.btn-grey-line {
+    height: 0.67rem;
+    line-height: 0.67rem;
+    margin: 0 auto;
+    display: block;
+    border-radius: 0.35rem;
+    font-size: 0.36rem;
+    -webkit-text-fill-color: #b9b9b9;
+    color: #b9b9b9;
+    text-align: center;
+    border: 1px solid #b9b9b9;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+}
+
+// tab
+.tab-template {
+    .tabs {
+        .tab {
+            &.active {
+                -webkit-text-fill-color: #c6010c;
+                color: #c6010c;
+            }
+        }
+    }
+
+    .tab-containers {
+
+        .tab-container {
+            display: none;
+
+            &.active {
+                display: block;
+            }
+        }
+    }
+}
+
+// modal
+
+.bk-cover {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.2);
+    display: none;
+    z-index: 888;
+
+    height:100%;
+}
+
+.modal {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 68%;
+    height: auto;
+    z-index: 999;
+    background-color: #ffffff;
+    overflow: hidden;
+    display: none;
+}
+
+// top
+.to-top {
+    position: fixed;
+    width: 1rem;
+    right: 3%;
+    bottom: 11%;
+    z-index: 10;
+}
+
+
+

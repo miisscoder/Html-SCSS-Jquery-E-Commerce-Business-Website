@@ -1,0 +1,168 @@
+﻿body.login {
+    background: url(../image/login-bk.jpg) no-repeat 0 0;
+    background-size: 100% auto;
+    background-position: top;
+    /*header*/
+    .header {
+        position: relative;
+        padding-top: 0.6rem;
+
+
+        .back {
+            position: absolute;
+            left: 4%;
+            top: 0.3rem;
+            width: 0.2rem;
+            height: auto;
+        }
+
+        .image {
+            border-radius: 50%;
+            width: 1.5rem;
+            height: 1.5rem;
+            overflow: hidden;
+            background-color: #ffffff;
+            border: 1px solid yellow;
+            margin: 0 auto;
+
+            .person {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .text {
+            font-size: 0.36rem;
+            line-height: 1;
+            padding-top: 0.1rem;
+            -webkit-text-fill-color: #ffffff;
+            color: #ffffff;
+            text-align: center;
+        }
+    }
+    /*main*/
+    .main {
+        margin-top: 0.54rem;
+
+        .form {
+            width: 86%;
+            margin: 0 auto;
+            border-radius: 0.4rem;
+            padding-top: 1.4rem;
+            padding-bottom: 1rem;
+            box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+            background-color: #ffffff;
+
+            .input-group {
+                position: relative;
+                margin: 0 auto;
+                margin-bottom: 0.5rem;
+                width: 90%;
+                position: relative;
+
+                label {
+                    display: block;
+                    font-size: 0.3rem;
+                    -webkit-text-fill-color: #000000;
+                    color: #000000;
+                    font-weight: normal;
+                    line-height: 1.1;
+                }
+
+                input {
+                    height: 0.6rem;
+                    -webkit-text-fill-color: #b18b69;
+                    color: #b18b69;
+                    text-align: left;
+                    font-size: 0.22rem;
+                    border: none;
+                    border-bottom: 1px solid #d3d3d3;
+                    width: 100%;
+                    display: block;
+
+                    &::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+                        -webkit-text-fill-color: #d3d3d3;
+                        color: #d3d3d3;
+                    }
+
+                    &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+                        -webkit-text-fill-color: #d3d3d3;
+                        color: #d3d3d3;
+                    }
+
+                    &::-moz-placeholder { /* Mozilla Firefox 19+ */
+                        -webkit-text-fill-color: #d3d3d3;
+                        color: #d3d3d3;
+                    }
+
+                    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+                        -webkit-text-fill-color: #d3d3d3;
+                        color: #d3d3d3;
+                    }
+                }
+
+                .red-text {
+                    -webkit-text-fill-color: #c6010c;
+                    color: #c6010c;
+                    font-size: 0.26rem;
+                    position: absolute;
+                    right: 0.2rem;
+                    bottom: 0.2rem;
+                }
+            }
+
+            .btn-red {
+                height: 0.8rem;
+                line-height: 0.8rem;
+                width: 90%;
+                margin: 0 auto;
+                display: block;
+                border-radius: 0.4rem;
+                font-size: 0.36rem;
+                -webkit-text-fill-color: #ffffff;
+                color: #ffffff;
+                text-align: center;
+                background-color: #c5010c;
+                margin-top: 0.35rem;
+            }
+
+
+
+            .bottom-infor {
+                font-size: 0.24rem;
+                margin-top: 0.2rem;
+
+                .link-red {
+                    -webkit-text-fill-color: #c6010c;
+                    color: #c6010c;
+                }
+            }
+        }
+
+        .boundary-line {
+            border-bottom: 1px solid #d3d3d3;
+            height: 0.9rem;
+            position: relative;
+            width: 55%;
+            margin: 0 auto;
+
+            .text {
+                text-align: center;
+                font-size: 0.22rem;
+                padding: 0 0.3rem;
+                position: absolute;
+                top: 0.7rem;
+                left: 50%;
+                transform: translateX(-50%);
+                background-color: #ffffff;
+            }
+        }
+
+        .wechat {
+            width: 0.8rem;
+            height: auto;
+            display: block;
+            margin: 0.45rem auto 0;
+        }
+    }
+}

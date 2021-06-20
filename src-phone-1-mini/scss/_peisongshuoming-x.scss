@@ -1,0 +1,77 @@
+﻿body.peisongshuoming {
+    background-color: #f6f6f6;
+    padding: 0;
+    /*header*/
+    .header {
+        position: relative;
+        background: #ffffff;
+        height: 1rem;
+
+
+        .close {
+            position: absolute;
+            left: 4%;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 0.2rem;
+            height: auto;
+        }
+
+        .logo {
+            width: 0.5rem;
+            height: 0.5rem;
+            margin-right: 0.2rem;
+        }
+
+        .text {
+            font-size: 0.36rem;
+            line-height: 0.36rem;
+        }
+    }
+    /*main*/
+    .main {
+        height: calc(100vh - 1rem);
+        background: url(../image/deliver-bk.jpg) no-repeat 0 0;
+        background-position: center;
+        background-size: 100% 100%;
+        position: relative;
+
+        .items {
+            padding: 20% 6.5% 0;
+
+            .item {
+                border-radius: 0.15rem;
+                box-shadow: 0 0 3px rgba(0,0,0,0.3);
+                background-color: #ffffff;
+                width: 48%;
+                margin-bottom: 0.1rem;
+
+                img {
+                    width: auto;
+                    height: 25%;
+                    margin-top: 0.5rem;
+                }
+
+                .title {
+                    font-size: 0.26rem;
+                    padding-top: 0.3rem;
+                    padding-bottom: 0.2rem;
+                }
+
+                .text {
+                    font-size: 0.2rem;
+                    text-align: center;
+                    height: 1rem;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box; //作为弹性伸缩盒子模型显示。
+                    -webkit-box-orient: vertical; //设置伸缩盒子的子元素排列方式--从上到下垂直排列
+                    -webkit-line-clamp: 3; //显示的行
+                    padding: 0 0 0.3rem;
+                    color: #6a6a6a;
+                    -webkit-text-fill-color: #6a6a6a;
+                }
+            }
+        }
+    }
+}
